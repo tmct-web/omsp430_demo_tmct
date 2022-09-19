@@ -2,6 +2,8 @@
 opemMSP430 Demo project  
 [日本語はこちら](#anchor0_ja)
 
+![opemMSP430 test environment](./image/terasic_de0_1.jpg "opemMSP430 test environment")
+
 This repository is a porting of openMSP430 to Terasic DE0 and DE0CV.  
 It is released as a Quartus Prime project.  
 This project includes a UART (basic_uart_tmct) freely available from firmware, an I<sup>2</sup>C master ([I2C controller core](https://opencores.org/projects/i2c)) and basic firmware to use them from the uart debug console, so you can start using it immediately as a base project for your FPGA-embedded microcontroller core.  
@@ -134,6 +136,13 @@ To use, connect the COM port (or USB-COM converter) of the PC to the above "UART
 - **Line feed code:**  
   Receive = CR or LF  
   Transmit = CR + LF
+
+　
+
+In the test environment, the board was connected to a GPIO pin header as shown in the following picture, and connected to a PC via USB-COM conversion.  
+Only the 2.2kΩ Pull Up resistor is visible in the photo, but the I<sup>2</sup>C EEPROM is on the back of the board.  
+
+![opemMSP430 test environment](./image/terasic_de0_2.jpg "opemMSP430 test environment")
 
 　
 
@@ -282,6 +291,13 @@ omsp430_demo_tmctの中身は概ね以下のようになっています。
 - **Line feed code:**  
   Receive = CR or LF  
   Transmit = CR + LF
+
+　
+
+テスト環境では以下の写真のようにGPIOピンヘッダに基板を接続し、USB-COM変換を介してパソコンに接続しました。  
+写真では2.2kΩのPull Up抵抗だけが見えていますが、基板の裏にはI<sup>2</sup>C EEPROMが載っています。
+
+![opemMSP430 test environment](./image/terasic_de0_2.jpg "opemMSP430 test environment")
 
 　
 
