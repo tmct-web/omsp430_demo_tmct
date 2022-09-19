@@ -1,0 +1,2378 @@
+
+output\omsp_demo.elf:     file format elf32-msp430
+
+SYMBOL TABLE:
+0000ffe0 l    d  __interrupt_vector_1	00000000 __interrupt_vector_1
+0000ffe2 l    d  __interrupt_vector_2	00000000 __interrupt_vector_2
+0000ffe4 l    d  __interrupt_vector_3	00000000 __interrupt_vector_3
+0000ffe6 l    d  __interrupt_vector_4	00000000 __interrupt_vector_4
+0000ffe8 l    d  __interrupt_vector_5	00000000 __interrupt_vector_5
+0000ffea l    d  __interrupt_vector_6	00000000 __interrupt_vector_6
+0000ffec l    d  __interrupt_vector_7	00000000 __interrupt_vector_7
+0000ffee l    d  __interrupt_vector_8	00000000 __interrupt_vector_8
+0000fff0 l    d  __interrupt_vector_9	00000000 __interrupt_vector_9
+0000fff2 l    d  __interrupt_vector_10	00000000 __interrupt_vector_10
+0000fff4 l    d  __interrupt_vector_11	00000000 __interrupt_vector_11
+0000fff6 l    d  __interrupt_vector_12	00000000 __interrupt_vector_12
+0000fff8 l    d  __interrupt_vector_13	00000000 __interrupt_vector_13
+0000fffa l    d  __interrupt_vector_14	00000000 __interrupt_vector_14
+0000fffc l    d  __interrupt_vector_15	00000000 __interrupt_vector_15
+0000fffe l    d  __reset_vector	00000000 __reset_vector
+0000c000 l    d  .rodata	00000000 .rodata
+0000c004 l    d  .text	00000000 .text
+00000200 l    d  .data	00000000 .data
+00000200 l    d  .bss	00000000 .bss
+00000200 l    d  .noinit	00000000 .noinit
+00000000 l    d  .MP430.attributes	00000000 .MP430.attributes
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    df *ABS*	00000000 ihandler.c
+00000000 l    df *ABS*	00000000 c:/dev/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/lib/430/crt0.o
+0000fffe l       __reset_vector	00000000 __msp430_resetvec_hook
+00000000 l    df *ABS*	00000000 crt_main.o
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    df *ABS*	00000000 per_uart.c
+00000000 l    df *ABS*	00000000 per_i2c.c
+0000ca6e g     F .text	00000008 INT_User_03
+0000c7c4 g     F .text	000001c4 uartSendAsciiValue
+0000ca66 g     F .text	00000008 INT_User_04
+0000ca76 g     F .text	00000008 INT_User_02
+0000c00e g     F .text	0000004c hexByteStringToChar
+0000c9f8 g     F .text	00000020 i2cRead
+0000c712 g     F .text	00000046 uartGetReceiveChar
+0000ca16 g     F .text	00000008 INT_NMI
+0000c05a g     F .text	00000052 hexByteStringToShort
+0000ca2e g     F .text	00000008 INT_User_11
+0000c004 g     F .text	00000004 __crt0_start
+0000c9c8 g     F .text	00000018 i2cEndTransmission
+0000ca7e g     F .text	0000000e INT_User_01
+0000c9e0 g     F .text	00000018 i2cBeginRequest
+0000ca3e g     F .text	00000008 INT_User_09
+0000c794 g     F .text	00000030 binaryToAscii
+0000ca56 g     F .text	00000008 INT_User_06
+00000200 g       .noinit	00000000 end
+0000ca46 g     F .text	00000008 INT_User_08
+0000c6ec g     F .text	00000018 uartInitialize
+0000c004 g       .text	00000000 _start
+0000ca8c g     F .text	0000000e INT_User_00
+0000ca1e g     F .text	00000008 INT_User_13
+00000000  w      *ABS*	00000000 __rom_highdatacopysize
+0000c0ac g     F .text	00000634 main
+00000000  w      *ABS*	00000000 __high_bsssize
+00000000  w      *ABS*	00000000 __rom_highdatastart
+0000ca4e g     F .text	00000008 INT_User_07
+0000ca5e g     F .text	00000008 INT_User_05
+0000ca26 g     F .text	00000008 INT_User_12
+00000000  w      *ABS*	00000000 __high_datastart
+00000000  w      *ABS*	00000000 __upper_data_init
+0000c9b2 g     F .text	00000016 i2cWrite
+00001200 g       .noinit	00000000 __stack
+00000200 g       .data	00000000 _edata
+00000000  w      *ABS*	00000000 __high_bssstart
+0000c758 g     F .text	0000003c uartSendChar
+0000c008 g     F .text	00000006 __crt0_call_main
+0000c704 g     F .text	0000000e uartClearReceive
+0000c99a g     F .text	00000018 i2cBeginTransmission
+0000c980 g     F .text	0000001a i2cInitialize
+0000ca36 g     F .text	00000008 INT_Watchdog
+
+
+
+Disassembly of section __interrupt_vector_1:
+
+0000ffe0 <__interrupt_vector_1>:
+    ffe0:	8c ca       	interrupt service routine at 0xca8c
+
+Disassembly of section __interrupt_vector_2:
+
+0000ffe2 <__interrupt_vector_2>:
+    ffe2:	7e ca       	interrupt service routine at 0xca7e
+
+Disassembly of section __interrupt_vector_3:
+
+0000ffe4 <__interrupt_vector_3>:
+    ffe4:	76 ca       	interrupt service routine at 0xca76
+
+Disassembly of section __interrupt_vector_4:
+
+0000ffe6 <__interrupt_vector_4>:
+    ffe6:	6e ca       	interrupt service routine at 0xca6e
+
+Disassembly of section __interrupt_vector_5:
+
+0000ffe8 <__interrupt_vector_5>:
+    ffe8:	66 ca       	interrupt service routine at 0xca66
+
+Disassembly of section __interrupt_vector_6:
+
+0000ffea <__interrupt_vector_6>:
+    ffea:	5e ca       	interrupt service routine at 0xca5e
+
+Disassembly of section __interrupt_vector_7:
+
+0000ffec <__interrupt_vector_7>:
+    ffec:	56 ca       	interrupt service routine at 0xca56
+
+Disassembly of section __interrupt_vector_8:
+
+0000ffee <__interrupt_vector_8>:
+    ffee:	4e ca       	interrupt service routine at 0xca4e
+
+Disassembly of section __interrupt_vector_9:
+
+0000fff0 <__interrupt_vector_9>:
+    fff0:	46 ca       	interrupt service routine at 0xca46
+
+Disassembly of section __interrupt_vector_10:
+
+0000fff2 <__interrupt_vector_10>:
+    fff2:	3e ca       	interrupt service routine at 0xca3e
+
+Disassembly of section __interrupt_vector_11:
+
+0000fff4 <__interrupt_vector_11>:
+    fff4:	36 ca       	interrupt service routine at 0xca36
+
+Disassembly of section __interrupt_vector_12:
+
+0000fff6 <__interrupt_vector_12>:
+    fff6:	2e ca       	interrupt service routine at 0xca2e
+
+Disassembly of section __interrupt_vector_13:
+
+0000fff8 <__interrupt_vector_13>:
+    fff8:	26 ca       	interrupt service routine at 0xca26
+
+Disassembly of section __interrupt_vector_14:
+
+0000fffa <__interrupt_vector_14>:
+    fffa:	1e ca       	interrupt service routine at 0xca1e
+
+Disassembly of section __interrupt_vector_15:
+
+0000fffc <__interrupt_vector_15>:
+    fffc:	16 ca       	interrupt service routine at 0xca16
+
+Disassembly of section .text:
+
+0000c004 <__crt0_start>:
+    c004:	31 40 00 12 	mov	#4608,	r1	;#0x1200
+
+0000c008 <__crt0_call_main>:
+    c008:	0c 43       	clr	r12		;
+
+0000c00a <.Loc.254.1>:
+    c00a:	b0 12 ac c0 	call	#-16212	;#0xc0ac
+
+0000c00e <hexByteStringToChar>:
+//  Note:
+//      If the ASCII byte string to be converted contains characters that 
+//      cannot be converted to hexadecimal an abnormal value is returned.
+//=================================== https://ss1.xrea.com/tmct.s1009.xrea.com/
+unsigned char hexByteStringToChar(char *str)
+{
+    c00e:	0e 4c       	mov	r12,	r14	;
+
+0000c010 <.LVL1>:
+    unsigned char r = 0;
+    if(*str > 0x39) r = *str - 0x07; else r = *str;
+    c010:	6c 4c       	mov.b	@r12,	r12	;
+
+0000c012 <.LVL2>:
+    c012:	7d 40 39 00 	mov.b	#57,	r13	;#0x0039
+    c016:	6d 9e       	cmp.b	@r14,	r13	;
+    c018:	04 2c       	jc	$+10     	;abs 0xc022
+
+0000c01a <.Loc.321.1>:
+    c01a:	4d 4c       	mov.b	r12,	r13	;
+    c01c:	7d 50 f9 ff 	add.b	#-7,	r13	;#0xfff9
+    c020:	4c 4d       	mov.b	r13,	r12	;
+
+0000c022 <.L2>:
+    str++;
+    if (*str != 0)
+    c022:	5d 4e 01 00 	mov.b	1(r14),	r13	;
+
+0000c026 <.Loc.323.1>:
+    c026:	ce 93 01 00 	cmp.b	#0,	1(r14)	;r3 As==00
+    c02a:	10 24       	jz	$+34     	;abs 0xc04c
+
+0000c02c <.LVL4>:
+    {
+        r <<= 4;
+    c02c:	0c 5c       	rla	r12		;
+    c02e:	0c 5c       	rla	r12		;
+    c030:	0c 5c       	rla	r12		;
+    c032:	0c 5c       	rla	r12		;
+
+0000c034 <.LVL5>:
+    c034:	8c 11       	sxt	r12		;
+
+0000c036 <.Loc.326.1>:
+        if(*str > 0x39) r |= (*str - 0x07) & 0x0f; else r |= (*str & 0x0f);
+    c036:	7e 40 39 00 	mov.b	#57,	r14	;#0x0039
+
+0000c03a <.LVL6>:
+    c03a:	4e 9d       	cmp.b	r13,	r14	;
+    c03c:	08 2c       	jc	$+18     	;abs 0xc04e
+
+0000c03e <.Loc.326.1>:
+    c03e:	7d 50 f9 ff 	add.b	#-7,	r13	;#0xfff9
+
+0000c042 <.Loc.326.1>:
+    c042:	7d f0 0f 00 	and.b	#15,	r13	;#0x000f
+
+0000c046 <.Loc.326.1>:
+    c046:	4c dd       	bis.b	r13,	r12	;
+    c048:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c04c <.L3>:
+    }
+    return r;
+}
+    c04c:	30 41       	ret			
+
+0000c04e <.L4>:
+        if(*str > 0x39) r |= (*str - 0x07) & 0x0f; else r |= (*str & 0x0f);
+    c04e:	7d f0 0f 00 	and.b	#15,	r13	;#0x000f
+
+0000c052 <.Loc.326.1>:
+    c052:	4c dd       	bis.b	r13,	r12	;
+    c054:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c058 <.LVL9>:
+}
+    c058:	30 41       	ret			
+
+0000c05a <hexByteStringToShort>:
+//  Note:
+//      If the ASCII byte string to be converted contains characters that 
+//      cannot be converted to hexadecimal an abnormal value is returned.
+//=================================== https://ss1.xrea.com/tmct.s1009.xrea.com/
+unsigned short hexByteStringToShort(char *str)
+{
+    c05a:	0a 12       	push	r10		;
+
+0000c05c <.LCFI0>:
+    c05c:	0d 4c       	mov	r12,	r13	;
+
+0000c05e <.LVL11>:
+    unsigned short r = 0;
+    unsigned char i;
+    if(*str > 0x39) r = *str - 0x07; else r = *str;
+    c05e:	6c 4c       	mov.b	@r12,	r12	;
+
+0000c060 <.LVL12>:
+    c060:	7e 40 39 00 	mov.b	#57,	r14	;#0x0039
+    c064:	6e 9d       	cmp.b	@r13,	r14	;
+    c066:	02 2c       	jc	$+6      	;abs 0xc06c
+
+0000c068 <.Loc.348.1>:
+    c068:	3c 50 f9 ff 	add	#-7,	r12	;#0xfff9
+
+0000c06c <.L11>:
+    c06c:	0a 4d       	mov	r13,	r10	;
+    c06e:	1a 53       	inc	r10		;
+    c070:	0b 4d       	mov	r13,	r11	;
+    c072:	2b 52       	add	#4,	r11	;r2 As==10
+
+0000c074 <.L15>:
+    for (i = 0; i < 3; i++)
+    {
+        str++;
+        if (*str != 0) 
+    c074:	7d 4a       	mov.b	@r10+,	r13	;
+
+0000c076 <.LVL15>:
+    c076:	0d 93       	cmp	#0,	r13	;r3 As==00
+    c078:	11 24       	jz	$+36     	;abs 0xc09c
+
+0000c07a <.Loc.354.1>:
+        {
+            r <<= 4;
+    c07a:	0c 5c       	rla	r12		;
+    c07c:	0c 5c       	rla	r12		;
+    c07e:	0c 5c       	rla	r12		;
+    c080:	0c 5c       	rla	r12		;
+
+0000c082 <.Loc.355.1>:
+            if(*str > 0x39) r |= (*str - 0x07) & 0x0f; else r |= (*str & 0x0f);
+    c082:	7e 40 39 00 	mov.b	#57,	r14	;#0x0039
+    c086:	4e 9d       	cmp.b	r13,	r14	;
+    c088:	0b 2c       	jc	$+24     	;abs 0xc0a0
+
+0000c08a <.Loc.355.1>:
+    c08a:	0f 4d       	mov	r13,	r15	;
+    c08c:	3f 50 f9 ff 	add	#-7,	r15	;#0xfff9
+
+0000c090 <.Loc.355.1>:
+    c090:	0e 4f       	mov	r15,	r14	;
+    c092:	7e f0 0f 00 	and.b	#15,	r14	;#0x000f
+
+0000c096 <.Loc.355.1>:
+    c096:	0c de       	bis	r14,	r12	;
+
+0000c098 <.LVL17>:
+    for (i = 0; i < 3; i++)
+    c098:	0a 9b       	cmp	r11,	r10	;
+    c09a:	ec 23       	jnz	$-38     	;abs 0xc074
+
+0000c09c <.L9>:
+        }
+        else break;
+    }
+    return r;
+}
+    c09c:	3a 41       	pop	r10		;
+
+0000c09e <.LCFI1>:
+    c09e:	30 41       	ret			
+
+0000c0a0 <.L13>:
+            if(*str > 0x39) r |= (*str - 0x07) & 0x0f; else r |= (*str & 0x0f);
+    c0a0:	7d f0 0f 00 	and.b	#15,	r13	;#0x000f
+
+0000c0a4 <.Loc.355.1>:
+    c0a4:	0c dd       	bis	r13,	r12	;
+
+0000c0a6 <.LVL21>:
+    for (i = 0; i < 3; i++)
+    c0a6:	0a 9b       	cmp	r11,	r10	;
+    c0a8:	e5 23       	jnz	$-52     	;abs 0xc074
+    c0aa:	f8 3f       	jmp	$-14     	;abs 0xc09c
+
+0000c0ac <main>:
+{
+    c0ac:	31 80 18 00 	sub	#24,	r1	;#0x0018
+
+0000c0b0 <.LCFI3>:
+    uartInitialize();
+    c0b0:	b0 12 ec c6 	call	#-14612	;#0xc6ec
+
+0000c0b4 <.LVL22>:
+    i2cInitialize();
+    c0b4:	b0 12 80 c9 	call	#-13952	;#0xc980
+
+0000c0b8 <.LVL23>:
+    GPIO0_DIR = 0x00;   // All input
+    c0b8:	c2 43 91 00 	mov.b	#0,	&0x0091	;r3 As==00
+
+0000c0bc <.Loc.93.1>:
+    GPIO1_DIR = 0xff;   // All output
+    c0bc:	f2 43 93 00 	mov.b	#-1,	&0x0093	;r3 As==11
+
+0000c0c0 <.L21>:
+        console_bufpos = 0;
+    c0c0:	c1 43 02 00 	mov.b	#0,	2(r1)	;r3 As==00
+
+0000c0c4 <.Loc.98.1>:
+        uartSendChar(console_ppt);
+    c0c4:	7c 40 3e 00 	mov.b	#62,	r12	;#0x003e
+    c0c8:	b0 12 58 c7 	call	#-14504	;#0xc758
+
+0000c0cc <.LVL24>:
+        eint();     // Interrupt enable
+    c0cc:	32 d2       	eint			
+
+0000c0ce <.Loc.105.1>:
+        for (i = 0; i < console_len; i++) console_buf[i] = 0;
+    c0ce:	c1 43 03 00 	mov.b	#0,	3(r1)	;r3 As==00
+
+0000c0d2 <.Loc.105.1>:
+    c0d2:	5c 41 03 00 	mov.b	3(r1),	r12	;
+
+0000c0d6 <.Loc.105.1>:
+    c0d6:	7d 40 0e 00 	mov.b	#14,	r13	;#0x000e
+    c0da:	4d 9c       	cmp.b	r12,	r13	;
+    c0dc:	10 28       	jnc	$+34     	;abs 0xc0fe
+
+0000c0de <.L22>:
+    c0de:	5c 41 03 00 	mov.b	3(r1),	r12	;
+
+0000c0e2 <.Loc.105.1>:
+    c0e2:	7e 40 09 00 	mov.b	#9,	r14	;
+    c0e6:	0e 51       	add	r1,	r14	;
+    c0e8:	0c 5e       	add	r14,	r12	;
+    c0ea:	cc 43 00 00 	mov.b	#0,	0(r12)	;r3 As==00
+
+0000c0ee <.Loc.105.1>:
+    c0ee:	d1 53 03 00 	inc.b	3(r1)		;
+
+0000c0f2 <.Loc.105.1>:
+    c0f2:	5c 41 03 00 	mov.b	3(r1),	r12	;
+
+0000c0f6 <.Loc.105.1>:
+    c0f6:	7d 40 0e 00 	mov.b	#14,	r13	;#0x000e
+    c0fa:	4d 9c       	cmp.b	r12,	r13	;
+    c0fc:	f0 2f       	jc	$-30     	;abs 0xc0de
+
+0000c0fe <.L23>:
+            console_byte = 0xff;
+    c0fe:	f1 43 01 00 	mov.b	#-1,	1(r1)	;r3 As==11
+
+0000c102 <.Loc.111.1>:
+            while (console_byte > 0x80)
+    c102:	09 3c       	jmp	$+20     	;abs 0xc116
+
+0000c104 <.L27>:
+                console_byte = uartGetReceiveChar();
+    c104:	b0 12 12 c7 	call	#-14574	;#0xc712
+
+0000c108 <.LVL25>:
+    c108:	c1 4c 01 00 	mov.b	r12,	1(r1)	;
+
+0000c10c <.Loc.114.1>:
+                if (console_byte == 0xfe) uartSendChar('!');
+    c10c:	5c 41 01 00 	mov.b	1(r1),	r12	;
+    c110:	7c 90 fe ff 	cmp.b	#-2,	r12	;#0xfffe
+    c114:	30 24       	jz	$+98     	;abs 0xc176
+
+0000c116 <.L26>:
+            while (console_byte > 0x80)
+    c116:	5c 41 01 00 	mov.b	1(r1),	r12	;
+
+0000c11a <.Loc.111.1>:
+    c11a:	7e 40 80 ff 	mov.b	#-128,	r14	;#0xff80
+    c11e:	4e 9c       	cmp.b	r12,	r14	;
+    c120:	f1 2b       	jnc	$-28     	;abs 0xc104
+
+0000c122 <.Loc.118.1>:
+            if ((console_byte == 0x0a) || (console_byte == 0x0d))
+    c122:	5c 41 01 00 	mov.b	1(r1),	r12	;
+    c126:	7c 90 0a 00 	cmp.b	#10,	r12	;#0x000a
+    c12a:	37 24       	jz	$+112    	;abs 0xc19a
+
+0000c12c <.Loc.118.1>:
+    c12c:	5c 41 01 00 	mov.b	1(r1),	r12	;
+    c130:	7c 90 0d 00 	cmp.b	#13,	r12	;#0x000d
+    c134:	32 24       	jz	$+102    	;abs 0xc19a
+
+0000c136 <.Loc.125.1>:
+            else if (console_byte == 0x08)
+    c136:	5c 41 01 00 	mov.b	1(r1),	r12	;
+    c13a:	7c 92       	cmp.b	#8,	r12	;r2 As==11
+    c13c:	21 24       	jz	$+68     	;abs 0xc180
+
+0000c13e <.Loc.138.1>:
+            else if (console_byte < ' ')
+    c13e:	5c 41 01 00 	mov.b	1(r1),	r12	;
+
+0000c142 <.Loc.138.1>:
+    c142:	7d 40 1f 00 	mov.b	#31,	r13	;#0x001f
+    c146:	4d 9c       	cmp.b	r12,	r13	;
+    c148:	da 2f       	jc	$-74     	;abs 0xc0fe
+
+0000c14a <.Loc.146.1>:
+                if (console_bufpos < console_len) {
+    c14a:	5c 41 02 00 	mov.b	2(r1),	r12	;
+
+0000c14e <.Loc.146.1>:
+    c14e:	7e 40 0e 00 	mov.b	#14,	r14	;#0x000e
+    c152:	4e 9c       	cmp.b	r12,	r14	;
+    c154:	d4 2b       	jnc	$-86     	;abs 0xc0fe
+
+0000c156 <.Loc.147.1>:
+                    console_buf[console_bufpos] = console_byte;
+    c156:	5c 41 02 00 	mov.b	2(r1),	r12	;
+
+0000c15a <.Loc.147.1>:
+    c15a:	7d 40 09 00 	mov.b	#9,	r13	;
+    c15e:	0d 51       	add	r1,	r13	;
+    c160:	0c 5d       	add	r13,	r12	;
+    c162:	dc 41 01 00 	mov.b	1(r1),	0(r12)	;
+    c166:	00 00 
+
+0000c168 <.Loc.148.1>:
+                    uartSendChar(console_byte);
+    c168:	5c 41 01 00 	mov.b	1(r1),	r12	;
+    c16c:	b0 12 58 c7 	call	#-14504	;#0xc758
+
+0000c170 <.LVL26>:
+                    console_bufpos++;
+    c170:	d1 53 02 00 	inc.b	2(r1)		;
+    c174:	c4 3f       	jmp	$-118    	;abs 0xc0fe
+
+0000c176 <.L148>:
+                if (console_byte == 0xfe) uartSendChar('!');
+    c176:	7c 40 21 00 	mov.b	#33,	r12	;#0x0021
+    c17a:	b0 12 58 c7 	call	#-14504	;#0xc758
+
+0000c17e <.LVL27>:
+    c17e:	cb 3f       	jmp	$-104    	;abs 0xc116
+
+0000c180 <.L149>:
+                if (console_bufpos > 0) {
+    c180:	5c 41 02 00 	mov.b	2(r1),	r12	;
+
+0000c184 <.Loc.129.1>:
+    c184:	0c 93       	cmp	#0,	r12	;r3 As==00
+    c186:	d2 20       	jnz	$+422    	;abs 0xc32c
+
+0000c188 <.L33>:
+                console_buf[console_bufpos] = 0;
+    c188:	5c 41 02 00 	mov.b	2(r1),	r12	;
+
+0000c18c <.Loc.136.1>:
+    c18c:	7e 40 09 00 	mov.b	#9,	r14	;
+    c190:	0e 51       	add	r1,	r14	;
+    c192:	0c 5e       	add	r14,	r12	;
+    c194:	cc 43 00 00 	mov.b	#0,	0(r12)	;r3 As==00
+    c198:	b2 3f       	jmp	$-154    	;abs 0xc0fe
+
+0000c19a <.L28>:
+                uartSendChar(0x0d); // [CR]
+    c19a:	7c 40 0d 00 	mov.b	#13,	r12	;#0x000d
+    c19e:	b0 12 58 c7 	call	#-14504	;#0xc758
+
+0000c1a2 <.LVL28>:
+                uartSendChar(0x0a); // [LF]
+    c1a2:	7c 40 0a 00 	mov.b	#10,	r12	;#0x000a
+    c1a6:	b0 12 58 c7 	call	#-14504	;#0xc758
+
+0000c1aa <.LVL29>:
+        dint();     // Interrupt disable
+    c1aa:	32 c2       	dint			
+    c1ac:	03 43       	nop			
+
+0000c1ae <.Loc.174.1>:
+        if ((console_buf[0] == 's') || (console_buf[0] == 'S'))
+    c1ae:	5c 41 09 00 	mov.b	9(r1),	r12	;
+    c1b2:	7c 90 73 00 	cmp.b	#115,	r12	;#0x0073
+    c1b6:	cf 24       	jz	$+416    	;abs 0xc356
+
+0000c1b8 <.Loc.174.1>:
+    c1b8:	5c 41 09 00 	mov.b	9(r1),	r12	;
+    c1bc:	7c 90 53 00 	cmp.b	#83,	r12	;#0x0053
+    c1c0:	ca 24       	jz	$+406    	;abs 0xc356
+
+0000c1c2 <.L35>:
+        if ((console_buf[0] == 'p') || (console_buf[0] == 'P'))
+    c1c2:	5c 41 09 00 	mov.b	9(r1),	r12	;
+    c1c6:	7c 90 70 00 	cmp.b	#112,	r12	;#0x0070
+    c1ca:	14 25       	jz	$+554    	;abs 0xc3f4
+
+0000c1cc <.L151>:
+    c1cc:	5c 41 09 00 	mov.b	9(r1),	r12	;
+    c1d0:	7c 90 50 00 	cmp.b	#80,	r12	;#0x0050
+    c1d4:	0f 25       	jz	$+544    	;abs 0xc3f4
+
+0000c1d6 <.Loc.251.1>:
+        else if ((console_buf[0] == 'i') || (console_buf[0] == 'I'))
+    c1d6:	5c 41 09 00 	mov.b	9(r1),	r12	;
+    c1da:	7c 90 69 00 	cmp.b	#105,	r12	;#0x0069
+    c1de:	05 24       	jz	$+12     	;abs 0xc1ea
+
+0000c1e0 <.Loc.251.1>:
+    c1e0:	5c 41 09 00 	mov.b	9(r1),	r12	;
+    c1e4:	7c 90 49 00 	cmp.b	#73,	r12	;#0x0049
+    c1e8:	6b 23       	jnz	$-296    	;abs 0xc0c0
+
+0000c1ea <.L62>:
+            if ((console_buf[1] == 'r') || (console_buf[1] == 'R'))
+    c1ea:	5c 41 0a 00 	mov.b	10(r1),	r12	;0x0000a
+    c1ee:	7c 90 72 00 	cmp.b	#114,	r12	;#0x0072
+    c1f2:	c1 25       	jz	$+900    	;abs 0xc576
+
+0000c1f4 <.Loc.253.1>:
+    c1f4:	5c 41 0a 00 	mov.b	10(r1),	r12	;0x0000a
+    c1f8:	7c 90 52 00 	cmp.b	#82,	r12	;#0x0052
+    c1fc:	bc 25       	jz	$+890    	;abs 0xc576
+
+0000c1fe <.Loc.277.1>:
+            else if ((console_buf[1] == 'w') || (console_buf[1] == 'W'))
+    c1fe:	5c 41 0a 00 	mov.b	10(r1),	r12	;0x0000a
+    c202:	7c 90 77 00 	cmp.b	#119,	r12	;#0x0077
+    c206:	05 24       	jz	$+12     	;abs 0xc212
+
+0000c208 <.Loc.277.1>:
+    c208:	5c 41 0a 00 	mov.b	10(r1),	r12	;0x0000a
+    c20c:	7c 90 57 00 	cmp.b	#87,	r12	;#0x0057
+    c210:	57 23       	jnz	$-336    	;abs 0xc0c0
+
+0000c212 <.L73>:
+                j = 0;
+    c212:	c1 43 04 00 	mov.b	#0,	4(r1)	;r3 As==00
+
+0000c216 <.LBB20>:
+    if(*str > 0x39) r = *str - 0x07; else r = *str;
+    c216:	5c 41 0b 00 	mov.b	11(r1),	r12	;0x0000b
+
+0000c21a <.Loc.321.1>:
+    c21a:	7d 40 39 00 	mov.b	#57,	r13	;#0x0039
+    c21e:	5d 91 0b 00 	cmp.b	11(r1),	r13	;0x0000b
+    c222:	04 2c       	jc	$+10     	;abs 0xc22c
+
+0000c224 <.Loc.321.1>:
+    c224:	7c 50 f9 ff 	add.b	#-7,	r12	;#0xfff9
+    c228:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c22c <.L74>:
+    if (*str != 0)
+    c22c:	5d 41 0c 00 	mov.b	12(r1),	r13	;0x0000c
+
+0000c230 <.Loc.323.1>:
+    c230:	c1 93 0c 00 	cmp.b	#0,	12(r1)	;r3 As==00, 0x000c
+    c234:	12 24       	jz	$+38     	;abs 0xc25a
+
+0000c236 <.LVL32>:
+        r <<= 4;
+    c236:	0c 5c       	rla	r12		;
+    c238:	0c 5c       	rla	r12		;
+    c23a:	0c 5c       	rla	r12		;
+    c23c:	0c 5c       	rla	r12		;
+
+0000c23e <.LVL33>:
+    c23e:	8c 11       	sxt	r12		;
+
+0000c240 <.Loc.326.1>:
+        if(*str > 0x39) r |= (*str - 0x07) & 0x0f; else r |= (*str & 0x0f);
+    c240:	7e 40 39 00 	mov.b	#57,	r14	;#0x0039
+    c244:	4e 9d       	cmp.b	r13,	r14	;
+    c246:	02 28       	jnc	$+6      	;abs 0xc24c
+    c248:	30 40 d0 c6 	br	#0xc6d0		;
+
+0000c24c <.Loc.326.1>:
+    c24c:	7d 50 f9 ff 	add.b	#-7,	r13	;#0xfff9
+
+0000c250 <.Loc.326.1>:
+    c250:	7d f0 0f 00 	and.b	#15,	r13	;#0x000f
+
+0000c254 <.Loc.326.1>:
+    c254:	4c dd       	bis.b	r13,	r12	;
+    c256:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c25a <.L75>:
+                addr = (unsigned short)hexByteStringToChar((char *)&console_buf[2]);    // Slave address to write
+    c25a:	81 4c 06 00 	mov	r12,	6(r1)	;
+
+0000c25e <.LBB23>:
+    if(*str > 0x39) r = *str - 0x07; else r = *str;
+    c25e:	5c 41 0d 00 	mov.b	13(r1),	r12	;0x0000d
+
+0000c262 <.Loc.321.1>:
+    c262:	7d 40 39 00 	mov.b	#57,	r13	;#0x0039
+    c266:	5d 91 0d 00 	cmp.b	13(r1),	r13	;0x0000d
+    c26a:	04 2c       	jc	$+10     	;abs 0xc274
+
+0000c26c <.Loc.321.1>:
+    c26c:	7c 50 f9 ff 	add.b	#-7,	r12	;#0xfff9
+    c270:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c274 <.L77>:
+    if (*str != 0)
+    c274:	5d 41 0e 00 	mov.b	14(r1),	r13	;0x0000e
+
+0000c278 <.Loc.323.1>:
+    c278:	c1 93 0e 00 	cmp.b	#0,	14(r1)	;r3 As==00, 0x000e
+    c27c:	12 24       	jz	$+38     	;abs 0xc2a2
+
+0000c27e <.LVL37>:
+        r <<= 4;
+    c27e:	0c 5c       	rla	r12		;
+    c280:	0c 5c       	rla	r12		;
+    c282:	0c 5c       	rla	r12		;
+    c284:	0c 5c       	rla	r12		;
+
+0000c286 <.LVL38>:
+    c286:	8c 11       	sxt	r12		;
+
+0000c288 <.Loc.326.1>:
+        if(*str > 0x39) r |= (*str - 0x07) & 0x0f; else r |= (*str & 0x0f);
+    c288:	7e 40 39 00 	mov.b	#57,	r14	;#0x0039
+    c28c:	4e 9d       	cmp.b	r13,	r14	;
+    c28e:	02 28       	jnc	$+6      	;abs 0xc294
+    c290:	30 40 de c6 	br	#0xc6de		;
+
+0000c294 <.Loc.326.1>:
+    c294:	7d 50 f9 ff 	add.b	#-7,	r13	;#0xfff9
+
+0000c298 <.Loc.326.1>:
+    c298:	7d f0 0f 00 	and.b	#15,	r13	;#0x000f
+
+0000c29c <.Loc.326.1>:
+    c29c:	4c dd       	bis.b	r13,	r12	;
+    c29e:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c2a2 <.L78>:
+                i = hexByteStringToChar((char *)&console_buf[4]);                       // Device address to write
+    c2a2:	c1 4c 03 00 	mov.b	r12,	3(r1)	;
+
+0000c2a6 <.LBB26>:
+    if(*str > 0x39) r = *str - 0x07; else r = *str;
+    c2a6:	5c 41 0f 00 	mov.b	15(r1),	r12	;0x0000f
+
+0000c2aa <.Loc.321.1>:
+    c2aa:	7d 40 39 00 	mov.b	#57,	r13	;#0x0039
+    c2ae:	5d 91 0f 00 	cmp.b	15(r1),	r13	;0x0000f
+    c2b2:	04 2c       	jc	$+10     	;abs 0xc2bc
+
+0000c2b4 <.Loc.321.1>:
+    c2b4:	7c 50 f9 ff 	add.b	#-7,	r12	;#0xfff9
+    c2b8:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c2bc <.L80>:
+    if (*str != 0)
+    c2bc:	5d 41 10 00 	mov.b	16(r1),	r13	;0x00010
+
+0000c2c0 <.Loc.323.1>:
+    c2c0:	c1 93 10 00 	cmp.b	#0,	16(r1)	;r3 As==00, 0x0010
+    c2c4:	10 24       	jz	$+34     	;abs 0xc2e6
+
+0000c2c6 <.LVL42>:
+        r <<= 4;
+    c2c6:	0c 5c       	rla	r12		;
+    c2c8:	0c 5c       	rla	r12		;
+    c2ca:	0c 5c       	rla	r12		;
+    c2cc:	0c 5c       	rla	r12		;
+
+0000c2ce <.LVL43>:
+    c2ce:	8c 11       	sxt	r12		;
+
+0000c2d0 <.Loc.326.1>:
+        if(*str > 0x39) r |= (*str - 0x07) & 0x0f; else r |= (*str & 0x0f);
+    c2d0:	7e 40 39 00 	mov.b	#57,	r14	;#0x0039
+    c2d4:	4e 9d       	cmp.b	r13,	r14	;
+    c2d6:	f6 2d       	jc	$+1006   	;abs 0xc6c4
+
+0000c2d8 <.Loc.326.1>:
+    c2d8:	7d 50 f9 ff 	add.b	#-7,	r13	;#0xfff9
+
+0000c2dc <.Loc.326.1>:
+    c2dc:	7d f0 0f 00 	and.b	#15,	r13	;#0x000f
+
+0000c2e0 <.Loc.326.1>:
+    c2e0:	4c dd       	bis.b	r13,	r12	;
+    c2e2:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c2e6 <.L81>:
+                data = hexByteStringToChar((char *)&console_buf[6]);                    // Data to write
+    c2e6:	c1 4c 05 00 	mov.b	r12,	5(r1)	;
+
+0000c2ea <.Loc.283.1>:
+                j |= i2cBeginTransmission((unsigned char)addr);
+    c2ea:	1c 41 06 00 	mov	6(r1),	r12	;
+    c2ee:	b0 12 9a c9 	call	#-13926	;#0xc99a
+
+0000c2f2 <.LVL45>:
+    c2f2:	c1 dc 04 00 	bis.b	r12,	4(r1)	;
+
+0000c2f6 <.Loc.284.1>:
+                j |= i2cWrite(i);
+    c2f6:	5c 41 03 00 	mov.b	3(r1),	r12	;
+    c2fa:	b0 12 b2 c9 	call	#-13902	;#0xc9b2
+
+0000c2fe <.LVL46>:
+    c2fe:	c1 dc 04 00 	bis.b	r12,	4(r1)	;
+
+0000c302 <.Loc.285.1>:
+                j |= i2cWrite(data);
+    c302:	5c 41 05 00 	mov.b	5(r1),	r12	;
+    c306:	b0 12 b2 c9 	call	#-13902	;#0xc9b2
+
+0000c30a <.LVL47>:
+    c30a:	c1 dc 04 00 	bis.b	r12,	4(r1)	;
+
+0000c30e <.Loc.286.1>:
+                if ((j & I2C_SR_RXACK) == 0x00)
+    c30e:	5c 41 04 00 	mov.b	4(r1),	r12	;
+    c312:	4c 93       	cmp.b	#0,	r12	;r3 As==00
+    c314:	a2 39       	jl	$+838    	;abs 0xc65a
+
+0000c316 <.L147>:
+                    uartSendChar(0x0d); // [CR]
+    c316:	7c 40 0d 00 	mov.b	#13,	r12	;#0x000d
+    c31a:	b0 12 58 c7 	call	#-14504	;#0xc758
+
+0000c31e <.LVL48>:
+                    uartSendChar(0x0a); // [LF]
+    c31e:	7c 40 0a 00 	mov.b	#10,	r12	;#0x000a
+    c322:	b0 12 58 c7 	call	#-14504	;#0xc758
+
+0000c326 <.LVL49>:
+                i2cEndTransmission();
+    c326:	b0 12 c8 c9 	call	#-13880	;#0xc9c8
+
+0000c32a <.LVL50>:
+    c32a:	ca 3e       	jmp	$-618    	;abs 0xc0c0
+
+0000c32c <.L150>:
+                    uartSendChar(0x08); // [BS]
+    c32c:	7c 42       	mov.b	#8,	r12	;r2 As==11
+    c32e:	b0 12 58 c7 	call	#-14504	;#0xc758
+
+0000c332 <.LVL51>:
+                    uartSendChar(' ');  // [SP]
+    c332:	7c 40 20 00 	mov.b	#32,	r12	;#0x0020
+    c336:	b0 12 58 c7 	call	#-14504	;#0xc758
+
+0000c33a <.LVL52>:
+                    uartSendChar(0x08); // [BS]
+    c33a:	7c 42       	mov.b	#8,	r12	;r2 As==11
+    c33c:	b0 12 58 c7 	call	#-14504	;#0xc758
+
+0000c340 <.LVL53>:
+                    console_buf[console_bufpos] = 0;
+    c340:	5c 41 02 00 	mov.b	2(r1),	r12	;
+
+0000c344 <.Loc.133.1>:
+    c344:	7d 40 09 00 	mov.b	#9,	r13	;
+    c348:	0d 51       	add	r1,	r13	;
+    c34a:	0c 5d       	add	r13,	r12	;
+    c34c:	cc 43 00 00 	mov.b	#0,	0(r12)	;r3 As==00
+
+0000c350 <.Loc.134.1>:
+                    console_bufpos--;
+    c350:	f1 53 02 00 	add.b	#-1,	2(r1)	;r3 As==11
+    c354:	19 3f       	jmp	$-460    	;abs 0xc188
+
+0000c356 <.L30>:
+            if ((console_buf[1] == 'r') || (console_buf[1] == 'R'))
+    c356:	5c 41 0a 00 	mov.b	10(r1),	r12	;0x0000a
+    c35a:	7c 90 72 00 	cmp.b	#114,	r12	;#0x0072
+    c35e:	eb 24       	jz	$+472    	;abs 0xc536
+
+0000c360 <.Loc.176.1>:
+    c360:	5c 41 0a 00 	mov.b	10(r1),	r12	;0x0000a
+    c364:	7c 90 52 00 	cmp.b	#82,	r12	;#0x0052
+    c368:	e6 24       	jz	$+462    	;abs 0xc536
+
+0000c36a <.Loc.184.1>:
+            else if ((console_buf[1] == 'w') || (console_buf[1] == 'W'))
+    c36a:	5c 41 0a 00 	mov.b	10(r1),	r12	;0x0000a
+    c36e:	7c 90 77 00 	cmp.b	#119,	r12	;#0x0077
+    c372:	05 24       	jz	$+12     	;abs 0xc37e
+
+0000c374 <.Loc.184.1>:
+    c374:	5c 41 0a 00 	mov.b	10(r1),	r12	;0x0000a
+    c378:	7c 90 57 00 	cmp.b	#87,	r12	;#0x0057
+    c37c:	22 23       	jnz	$-442    	;abs 0xc1c2
+
+0000c37e <.L38>:
+                addr = hexByteStringToShort((char *)&console_buf[2]);   // Address to write
+    c37e:	0c 41       	mov	r1,	r12	;
+    c380:	3c 50 0b 00 	add	#11,	r12	;#0x000b
+    c384:	b0 12 5a c0 	call	#-16294	;#0xc05a
+
+0000c388 <.LVL54>:
+    c388:	81 4c 06 00 	mov	r12,	6(r1)	;
+
+0000c38c <.LBB29>:
+    if(*str > 0x39) r = *str - 0x07; else r = *str;
+    c38c:	5c 41 0f 00 	mov.b	15(r1),	r12	;0x0000f
+
+0000c390 <.Loc.321.1>:
+    c390:	7e 40 39 00 	mov.b	#57,	r14	;#0x0039
+    c394:	5e 91 0f 00 	cmp.b	15(r1),	r14	;0x0000f
+    c398:	04 2c       	jc	$+10     	;abs 0xc3a2
+
+0000c39a <.Loc.321.1>:
+    c39a:	7c 50 f9 ff 	add.b	#-7,	r12	;#0xfff9
+    c39e:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c3a2 <.L39>:
+    if (*str != 0)
+    c3a2:	5d 41 10 00 	mov.b	16(r1),	r13	;0x00010
+
+0000c3a6 <.Loc.323.1>:
+    c3a6:	c1 93 10 00 	cmp.b	#0,	16(r1)	;r3 As==00, 0x0010
+    c3aa:	10 24       	jz	$+34     	;abs 0xc3cc
+
+0000c3ac <.LVL57>:
+        r <<= 4;
+    c3ac:	0c 5c       	rla	r12		;
+    c3ae:	0c 5c       	rla	r12		;
+    c3b0:	0c 5c       	rla	r12		;
+    c3b2:	0c 5c       	rla	r12		;
+
+0000c3b4 <.LVL58>:
+    c3b4:	8c 11       	sxt	r12		;
+
+0000c3b6 <.Loc.326.1>:
+        if(*str > 0x39) r |= (*str - 0x07) & 0x0f; else r |= (*str & 0x0f);
+    c3b6:	7e 40 39 00 	mov.b	#57,	r14	;#0x0039
+    c3ba:	4e 9d       	cmp.b	r13,	r14	;
+    c3bc:	65 2d       	jc	$+716    	;abs 0xc688
+
+0000c3be <.Loc.326.1>:
+    c3be:	7d 50 f9 ff 	add.b	#-7,	r13	;#0xfff9
+
+0000c3c2 <.Loc.326.1>:
+    c3c2:	7d f0 0f 00 	and.b	#15,	r13	;#0x000f
+
+0000c3c6 <.Loc.326.1>:
+    c3c6:	4c dd       	bis.b	r13,	r12	;
+    c3c8:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c3cc <.L40>:
+                data = hexByteStringToChar((char *)&console_buf[6]);    // Data to write
+    c3cc:	c1 4c 05 00 	mov.b	r12,	5(r1)	;
+
+0000c3d0 <.Loc.188.1>:
+                (*(volatile unsigned char *)addr) = data;
+    c3d0:	1c 41 06 00 	mov	6(r1),	r12	;
+
+0000c3d4 <.Loc.188.1>:
+    c3d4:	dc 41 05 00 	mov.b	5(r1),	0(r12)	;
+    c3d8:	00 00 
+
+0000c3da <.Loc.189.1>:
+                uartSendChar(0x0d); // [CR]
+    c3da:	7c 40 0d 00 	mov.b	#13,	r12	;#0x000d
+    c3de:	b0 12 58 c7 	call	#-14504	;#0xc758
+
+0000c3e2 <.LVL60>:
+                uartSendChar(0x0a); // [LF]
+    c3e2:	7c 40 0a 00 	mov.b	#10,	r12	;#0x000a
+    c3e6:	b0 12 58 c7 	call	#-14504	;#0xc758
+
+0000c3ea <.LVL61>:
+        if ((console_buf[0] == 'p') || (console_buf[0] == 'P'))
+    c3ea:	5c 41 09 00 	mov.b	9(r1),	r12	;
+    c3ee:	7c 90 70 00 	cmp.b	#112,	r12	;#0x0070
+    c3f2:	ec 22       	jnz	$-550    	;abs 0xc1cc
+
+0000c3f4 <.L42>:
+            if ((console_buf[1] == 'r') || (console_buf[1] == 'R'))
+    c3f4:	5c 41 0a 00 	mov.b	10(r1),	r12	;0x0000a
+    c3f8:	7c 90 72 00 	cmp.b	#114,	r12	;#0x0072
+    c3fc:	64 24       	jz	$+202    	;abs 0xc4c6
+
+0000c3fe <.Loc.214.1>:
+    c3fe:	5c 41 0a 00 	mov.b	10(r1),	r12	;0x0000a
+    c402:	7c 90 52 00 	cmp.b	#82,	r12	;#0x0052
+    c406:	5f 24       	jz	$+192    	;abs 0xc4c6
+
+0000c408 <.Loc.224.1>:
+            else if ((console_buf[1] == 'w') || (console_buf[1] == 'W'))
+    c408:	5c 41 0a 00 	mov.b	10(r1),	r12	;0x0000a
+    c40c:	7c 90 77 00 	cmp.b	#119,	r12	;#0x0077
+    c410:	05 24       	jz	$+12     	;abs 0xc41c
+
+0000c412 <.Loc.224.1>:
+    c412:	5c 41 0a 00 	mov.b	10(r1),	r12	;0x0000a
+    c416:	7c 90 57 00 	cmp.b	#87,	r12	;#0x0057
+    c41a:	52 22       	jnz	$-858    	;abs 0xc0c0
+
+0000c41c <.L53>:
+    if(*str > 0x39) r = *str - 0x07; else r = *str;
+    c41c:	5c 41 0b 00 	mov.b	11(r1),	r12	;0x0000b
+
+0000c420 <.Loc.321.1>:
+    c420:	7d 40 39 00 	mov.b	#57,	r13	;#0x0039
+    c424:	5d 91 0b 00 	cmp.b	11(r1),	r13	;0x0000b
+    c428:	04 2c       	jc	$+10     	;abs 0xc432
+
+0000c42a <.Loc.321.1>:
+    c42a:	7c 50 f9 ff 	add.b	#-7,	r12	;#0xfff9
+    c42e:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c432 <.L54>:
+    if (*str != 0)
+    c432:	5d 41 0c 00 	mov.b	12(r1),	r13	;0x0000c
+
+0000c436 <.Loc.323.1>:
+    c436:	c1 93 0c 00 	cmp.b	#0,	12(r1)	;r3 As==00, 0x000c
+    c43a:	10 24       	jz	$+34     	;abs 0xc45c
+
+0000c43c <.LVL64>:
+        r <<= 4;
+    c43c:	0c 5c       	rla	r12		;
+    c43e:	0c 5c       	rla	r12		;
+    c440:	0c 5c       	rla	r12		;
+    c442:	0c 5c       	rla	r12		;
+
+0000c444 <.LVL65>:
+    c444:	8c 11       	sxt	r12		;
+
+0000c446 <.Loc.326.1>:
+        if(*str > 0x39) r |= (*str - 0x07) & 0x0f; else r |= (*str & 0x0f);
+    c446:	7e 40 39 00 	mov.b	#57,	r14	;#0x0039
+    c44a:	4e 9d       	cmp.b	r13,	r14	;
+    c44c:	23 2d       	jc	$+584    	;abs 0xc694
+
+0000c44e <.Loc.326.1>:
+    c44e:	7d 50 f9 ff 	add.b	#-7,	r13	;#0xfff9
+
+0000c452 <.Loc.326.1>:
+    c452:	7d f0 0f 00 	and.b	#15,	r13	;#0x000f
+
+0000c456 <.Loc.326.1>:
+    c456:	4c dd       	bis.b	r13,	r12	;
+    c458:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c45c <.L55>:
+                i = hexByteStringToChar((char *)&console_buf[2]);       // Port number to write
+    c45c:	c1 4c 03 00 	mov.b	r12,	3(r1)	;
+
+0000c460 <.LBB35>:
+    if(*str > 0x39) r = *str - 0x07; else r = *str;
+    c460:	5c 41 0d 00 	mov.b	13(r1),	r12	;0x0000d
+
+0000c464 <.Loc.321.1>:
+    c464:	7d 40 39 00 	mov.b	#57,	r13	;#0x0039
+    c468:	5d 91 0d 00 	cmp.b	13(r1),	r13	;0x0000d
+    c46c:	04 2c       	jc	$+10     	;abs 0xc476
+
+0000c46e <.Loc.321.1>:
+    c46e:	7c 50 f9 ff 	add.b	#-7,	r12	;#0xfff9
+    c472:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c476 <.L57>:
+    if (*str != 0)
+    c476:	5d 41 0e 00 	mov.b	14(r1),	r13	;0x0000e
+
+0000c47a <.Loc.323.1>:
+    c47a:	c1 93 0e 00 	cmp.b	#0,	14(r1)	;r3 As==00, 0x000e
+    c47e:	10 24       	jz	$+34     	;abs 0xc4a0
+
+0000c480 <.LVL69>:
+        r <<= 4;
+    c480:	0c 5c       	rla	r12		;
+    c482:	0c 5c       	rla	r12		;
+    c484:	0c 5c       	rla	r12		;
+    c486:	0c 5c       	rla	r12		;
+
+0000c488 <.LVL70>:
+    c488:	8c 11       	sxt	r12		;
+
+0000c48a <.Loc.326.1>:
+        if(*str > 0x39) r |= (*str - 0x07) & 0x0f; else r |= (*str & 0x0f);
+    c48a:	7e 40 39 00 	mov.b	#57,	r14	;#0x0039
+    c48e:	4e 9d       	cmp.b	r13,	r14	;
+    c490:	07 2d       	jc	$+528    	;abs 0xc6a0
+
+0000c492 <.Loc.326.1>:
+    c492:	7d 50 f9 ff 	add.b	#-7,	r13	;#0xfff9
+
+0000c496 <.Loc.326.1>:
+    c496:	7d f0 0f 00 	and.b	#15,	r13	;#0x000f
+
+0000c49a <.Loc.326.1>:
+    c49a:	4c dd       	bis.b	r13,	r12	;
+    c49c:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c4a0 <.L58>:
+                data = hexByteStringToChar((char *)&console_buf[4]);    // Data to write
+    c4a0:	c1 4c 05 00 	mov.b	r12,	5(r1)	;
+
+0000c4a4 <.Loc.228.1>:
+                if      (i == 0x00) GPIO0_PORT = data;
+    c4a4:	5c 41 03 00 	mov.b	3(r1),	r12	;
+
+0000c4a8 <.Loc.228.1>:
+    c4a8:	0c 93       	cmp	#0,	r12	;r3 As==00
+    c4aa:	e2 20       	jnz	$+454    	;abs 0xc670
+
+0000c4ac <.Loc.228.1>:
+    c4ac:	d2 41 05 00 	mov.b	5(r1),	&0x0090	;
+    c4b0:	90 00 
+
+0000c4b2 <.L61>:
+                uartSendChar(0x0d); // [CR]
+    c4b2:	7c 40 0d 00 	mov.b	#13,	r12	;#0x000d
+    c4b6:	b0 12 58 c7 	call	#-14504	;#0xc758
+
+0000c4ba <.LVL72>:
+                uartSendChar(0x0a); // [LF]
+    c4ba:	7c 40 0a 00 	mov.b	#10,	r12	;#0x000a
+    c4be:	b0 12 58 c7 	call	#-14504	;#0xc758
+
+0000c4c2 <.LVL73>:
+    c4c2:	30 40 c0 c0 	br	#0xc0c0		;
+
+0000c4c6 <.L44>:
+    if(*str > 0x39) r = *str - 0x07; else r = *str;
+    c4c6:	5c 41 0b 00 	mov.b	11(r1),	r12	;0x0000b
+
+0000c4ca <.Loc.321.1>:
+    c4ca:	7d 40 39 00 	mov.b	#57,	r13	;#0x0039
+    c4ce:	5d 91 0b 00 	cmp.b	11(r1),	r13	;0x0000b
+    c4d2:	04 2c       	jc	$+10     	;abs 0xc4dc
+
+0000c4d4 <.Loc.321.1>:
+    c4d4:	7c 50 f9 ff 	add.b	#-7,	r12	;#0xfff9
+    c4d8:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c4dc <.L46>:
+    if (*str != 0)
+    c4dc:	5d 41 0c 00 	mov.b	12(r1),	r13	;0x0000c
+
+0000c4e0 <.Loc.323.1>:
+    c4e0:	c1 93 0c 00 	cmp.b	#0,	12(r1)	;r3 As==00, 0x000c
+    c4e4:	10 24       	jz	$+34     	;abs 0xc506
+
+0000c4e6 <.LVL76>:
+        r <<= 4;
+    c4e6:	0c 5c       	rla	r12		;
+    c4e8:	0c 5c       	rla	r12		;
+    c4ea:	0c 5c       	rla	r12		;
+    c4ec:	0c 5c       	rla	r12		;
+
+0000c4ee <.LVL77>:
+    c4ee:	8c 11       	sxt	r12		;
+
+0000c4f0 <.Loc.326.1>:
+        if(*str > 0x39) r |= (*str - 0x07) & 0x0f; else r |= (*str & 0x0f);
+    c4f0:	7e 40 39 00 	mov.b	#57,	r14	;#0x0039
+    c4f4:	4e 9d       	cmp.b	r13,	r14	;
+    c4f6:	b6 2c       	jc	$+366    	;abs 0xc664
+
+0000c4f8 <.Loc.326.1>:
+    c4f8:	7d 50 f9 ff 	add.b	#-7,	r13	;#0xfff9
+
+0000c4fc <.Loc.326.1>:
+    c4fc:	7d f0 0f 00 	and.b	#15,	r13	;#0x000f
+
+0000c500 <.Loc.326.1>:
+    c500:	4c dd       	bis.b	r13,	r12	;
+    c502:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c506 <.L47>:
+                i = hexByteStringToChar((char *)&console_buf[2]);   // Port number to read
+    c506:	c1 4c 03 00 	mov.b	r12,	3(r1)	;
+
+0000c50a <.Loc.217.1>:
+                if      (i == 0x00) data = GPIO0_PORT;
+    c50a:	5c 41 03 00 	mov.b	3(r1),	r12	;
+
+0000c50e <.Loc.217.1>:
+    c50e:	0c 93       	cmp	#0,	r12	;r3 As==00
+    c510:	2b 20       	jnz	$+88     	;abs 0xc568
+
+0000c512 <.Loc.217.1>:
+    c512:	d1 42 90 00 	mov.b	&0x0090,5(r1)	;0x0090
+    c516:	05 00 
+
+0000c518 <.L50>:
+                uartSendAsciiValue(2, data);
+    c518:	5d 41 05 00 	mov.b	5(r1),	r13	;
+    c51c:	6c 43       	mov.b	#2,	r12	;r3 As==10
+    c51e:	b0 12 c4 c7 	call	#-14396	;#0xc7c4
+
+0000c522 <.LVL79>:
+                uartSendChar(0x0d); // [CR]
+    c522:	7c 40 0d 00 	mov.b	#13,	r12	;#0x000d
+    c526:	b0 12 58 c7 	call	#-14504	;#0xc758
+
+0000c52a <.LVL80>:
+                uartSendChar(0x0a); // [LF]
+    c52a:	7c 40 0a 00 	mov.b	#10,	r12	;#0x000a
+    c52e:	b0 12 58 c7 	call	#-14504	;#0xc758
+
+0000c532 <.LVL81>:
+    c532:	30 40 c0 c0 	br	#0xc0c0		;
+
+0000c536 <.L36>:
+                addr = hexByteStringToShort((char *)&console_buf[2]);   // Address to read
+    c536:	0c 41       	mov	r1,	r12	;
+    c538:	3c 50 0b 00 	add	#11,	r12	;#0x000b
+    c53c:	b0 12 5a c0 	call	#-16294	;#0xc05a
+
+0000c540 <.LVL82>:
+    c540:	81 4c 06 00 	mov	r12,	6(r1)	;
+
+0000c544 <.Loc.179.1>:
+                data = (*(volatile unsigned char *)addr);
+    c544:	1c 41 06 00 	mov	6(r1),	r12	;
+
+0000c548 <.Loc.179.1>:
+    c548:	e1 4c 05 00 	mov.b	@r12,	5(r1)	;
+
+0000c54c <.Loc.180.1>:
+                uartSendAsciiValue(2, data);
+    c54c:	5d 41 05 00 	mov.b	5(r1),	r13	;
+    c550:	6c 43       	mov.b	#2,	r12	;r3 As==10
+    c552:	b0 12 c4 c7 	call	#-14396	;#0xc7c4
+
+0000c556 <.LVL83>:
+                uartSendChar(0x0d); // [CR]
+    c556:	7c 40 0d 00 	mov.b	#13,	r12	;#0x000d
+    c55a:	b0 12 58 c7 	call	#-14504	;#0xc758
+
+0000c55e <.LVL84>:
+                uartSendChar(0x0a); // [LF]
+    c55e:	7c 40 0a 00 	mov.b	#10,	r12	;#0x000a
+    c562:	b0 12 58 c7 	call	#-14504	;#0xc758
+
+0000c566 <.LVL85>:
+    c566:	2d 3e       	jmp	$-932    	;abs 0xc1c2
+
+0000c568 <.L49>:
+                else if (i == 0x01) data = GPIO1_PORT;
+    c568:	5c 41 03 00 	mov.b	3(r1),	r12	;
+    c56c:	5c 93       	cmp.b	#1,	r12	;r3 As==01
+    c56e:	88 24       	jz	$+274    	;abs 0xc680
+
+0000c570 <.Loc.219.1>:
+                else                data = 0xff;
+    c570:	f1 43 05 00 	mov.b	#-1,	5(r1)	;r3 As==11
+    c574:	d1 3f       	jmp	$-92     	;abs 0xc518
+
+0000c576 <.L63>:
+                j = 0;
+    c576:	c1 43 04 00 	mov.b	#0,	4(r1)	;r3 As==00
+
+0000c57a <.LBB41>:
+    if(*str > 0x39) r = *str - 0x07; else r = *str;
+    c57a:	5c 41 0b 00 	mov.b	11(r1),	r12	;0x0000b
+
+0000c57e <.Loc.321.1>:
+    c57e:	7d 40 39 00 	mov.b	#57,	r13	;#0x0039
+    c582:	5d 91 0b 00 	cmp.b	11(r1),	r13	;0x0000b
+    c586:	04 2c       	jc	$+10     	;abs 0xc590
+
+0000c588 <.Loc.321.1>:
+    c588:	7c 50 f9 ff 	add.b	#-7,	r12	;#0xfff9
+    c58c:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c590 <.L65>:
+    if (*str != 0)
+    c590:	5d 41 0c 00 	mov.b	12(r1),	r13	;0x0000c
+
+0000c594 <.Loc.323.1>:
+    c594:	c1 93 0c 00 	cmp.b	#0,	12(r1)	;r3 As==00, 0x000c
+    c598:	10 24       	jz	$+34     	;abs 0xc5ba
+
+0000c59a <.LVL88>:
+        r <<= 4;
+    c59a:	0c 5c       	rla	r12		;
+    c59c:	0c 5c       	rla	r12		;
+    c59e:	0c 5c       	rla	r12		;
+    c5a0:	0c 5c       	rla	r12		;
+
+0000c5a2 <.LVL89>:
+    c5a2:	8c 11       	sxt	r12		;
+
+0000c5a4 <.Loc.326.1>:
+        if(*str > 0x39) r |= (*str - 0x07) & 0x0f; else r |= (*str & 0x0f);
+    c5a4:	7e 40 39 00 	mov.b	#57,	r14	;#0x0039
+    c5a8:	4e 9d       	cmp.b	r13,	r14	;
+    c5aa:	80 2c       	jc	$+258    	;abs 0xc6ac
+
+0000c5ac <.Loc.326.1>:
+    c5ac:	7d 50 f9 ff 	add.b	#-7,	r13	;#0xfff9
+
+0000c5b0 <.Loc.326.1>:
+    c5b0:	7d f0 0f 00 	and.b	#15,	r13	;#0x000f
+
+0000c5b4 <.Loc.326.1>:
+    c5b4:	4c dd       	bis.b	r13,	r12	;
+    c5b6:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c5ba <.L66>:
+                addr = (unsigned short)hexByteStringToChar((char *)&console_buf[2]);    // Slave address to read
+    c5ba:	81 4c 06 00 	mov	r12,	6(r1)	;
+
+0000c5be <.LBB44>:
+    if(*str > 0x39) r = *str - 0x07; else r = *str;
+    c5be:	5c 41 0d 00 	mov.b	13(r1),	r12	;0x0000d
+
+0000c5c2 <.Loc.321.1>:
+    c5c2:	7d 40 39 00 	mov.b	#57,	r13	;#0x0039
+    c5c6:	5d 91 0d 00 	cmp.b	13(r1),	r13	;0x0000d
+    c5ca:	04 2c       	jc	$+10     	;abs 0xc5d4
+
+0000c5cc <.Loc.321.1>:
+    c5cc:	7c 50 f9 ff 	add.b	#-7,	r12	;#0xfff9
+    c5d0:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c5d4 <.L68>:
+    if (*str != 0)
+    c5d4:	5d 41 0e 00 	mov.b	14(r1),	r13	;0x0000e
+
+0000c5d8 <.Loc.323.1>:
+    c5d8:	c1 93 0e 00 	cmp.b	#0,	14(r1)	;r3 As==00, 0x000e
+    c5dc:	10 24       	jz	$+34     	;abs 0xc5fe
+
+0000c5de <.LVL93>:
+        r <<= 4;
+    c5de:	0c 5c       	rla	r12		;
+    c5e0:	0c 5c       	rla	r12		;
+    c5e2:	0c 5c       	rla	r12		;
+    c5e4:	0c 5c       	rla	r12		;
+
+0000c5e6 <.LVL94>:
+    c5e6:	8c 11       	sxt	r12		;
+
+0000c5e8 <.Loc.326.1>:
+        if(*str > 0x39) r |= (*str - 0x07) & 0x0f; else r |= (*str & 0x0f);
+    c5e8:	7e 40 39 00 	mov.b	#57,	r14	;#0x0039
+    c5ec:	4e 9d       	cmp.b	r13,	r14	;
+    c5ee:	64 2c       	jc	$+202    	;abs 0xc6b8
+
+0000c5f0 <.Loc.326.1>:
+    c5f0:	7d 50 f9 ff 	add.b	#-7,	r13	;#0xfff9
+
+0000c5f4 <.Loc.326.1>:
+    c5f4:	7d f0 0f 00 	and.b	#15,	r13	;#0x000f
+
+0000c5f8 <.Loc.326.1>:
+    c5f8:	4c dd       	bis.b	r13,	r12	;
+    c5fa:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c5fe <.L69>:
+                i = hexByteStringToChar((char *)&console_buf[4]);                       // Device address to read
+    c5fe:	c1 4c 03 00 	mov.b	r12,	3(r1)	;
+
+0000c602 <.Loc.258.1>:
+                j |= i2cBeginTransmission((unsigned char)addr);
+    c602:	1c 41 06 00 	mov	6(r1),	r12	;
+    c606:	b0 12 9a c9 	call	#-13926	;#0xc99a
+
+0000c60a <.LVL96>:
+    c60a:	c1 dc 04 00 	bis.b	r12,	4(r1)	;
+
+0000c60e <.Loc.259.1>:
+                j |= i2cWrite(i);
+    c60e:	5c 41 03 00 	mov.b	3(r1),	r12	;
+    c612:	b0 12 b2 c9 	call	#-13902	;#0xc9b2
+
+0000c616 <.LVL97>:
+    c616:	c1 dc 04 00 	bis.b	r12,	4(r1)	;
+
+0000c61a <.Loc.260.1>:
+                j |= i2cBeginRequest((unsigned char)addr);
+    c61a:	1c 41 06 00 	mov	6(r1),	r12	;
+    c61e:	b0 12 e0 c9 	call	#-13856	;#0xc9e0
+
+0000c622 <.LVL98>:
+    c622:	c1 dc 04 00 	bis.b	r12,	4(r1)	;
+
+0000c626 <.Loc.261.1>:
+                if ((j & I2C_SR_RXACK) == 0x00)
+    c626:	5c 41 04 00 	mov.b	4(r1),	r12	;
+    c62a:	4c 93       	cmp.b	#0,	r12	;r3 As==00
+    c62c:	16 38       	jl	$+46     	;abs 0xc65a
+
+0000c62e <.Loc.263.1>:
+                    data = i2cRead(0);
+    c62e:	4c 43       	clr.b	r12		;
+    c630:	b0 12 f8 c9 	call	#-13832	;#0xc9f8
+
+0000c634 <.LVL99>:
+    c634:	c1 4c 05 00 	mov.b	r12,	5(r1)	;
+
+0000c638 <.Loc.264.1>:
+                    uartSendAsciiValue(2, data);
+    c638:	5d 41 05 00 	mov.b	5(r1),	r13	;
+    c63c:	6c 43       	mov.b	#2,	r12	;r3 As==10
+    c63e:	b0 12 c4 c7 	call	#-14396	;#0xc7c4
+
+0000c642 <.LVL100>:
+                    uartSendChar(0x0d); // [CR]
+    c642:	7c 40 0d 00 	mov.b	#13,	r12	;#0x000d
+    c646:	b0 12 58 c7 	call	#-14504	;#0xc758
+
+0000c64a <.LVL101>:
+                    uartSendChar(0x0a); // [LF]
+    c64a:	7c 40 0a 00 	mov.b	#10,	r12	;#0x000a
+    c64e:	b0 12 58 c7 	call	#-14504	;#0xc758
+
+0000c652 <.LVL102>:
+                i2cEndTransmission();
+    c652:	b0 12 c8 c9 	call	#-13880	;#0xc9c8
+
+0000c656 <.LVL103>:
+    c656:	30 40 c0 c0 	br	#0xc0c0		;
+
+0000c65a <.L71>:
+                    uartSendChar('E');
+    c65a:	7c 40 45 00 	mov.b	#69,	r12	;#0x0045
+    c65e:	b0 12 58 c7 	call	#-14504	;#0xc758
+
+0000c662 <.LVL104>:
+    c662:	59 3e       	jmp	$-844    	;abs 0xc316
+
+0000c664 <.L48>:
+        if(*str > 0x39) r |= (*str - 0x07) & 0x0f; else r |= (*str & 0x0f);
+    c664:	7d f0 0f 00 	and.b	#15,	r13	;#0x000f
+
+0000c668 <.Loc.326.1>:
+    c668:	4c dd       	bis.b	r13,	r12	;
+    c66a:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c66e <.LVL106>:
+    c66e:	4b 3f       	jmp	$-360    	;abs 0xc506
+
+0000c670 <.L60>:
+                else if (i == 0x01) GPIO1_PORT = data;
+    c670:	5c 41 03 00 	mov.b	3(r1),	r12	;
+    c674:	5c 93       	cmp.b	#1,	r12	;r3 As==01
+    c676:	1d 23       	jnz	$-452    	;abs 0xc4b2
+
+0000c678 <.Loc.229.1>:
+    c678:	d2 41 05 00 	mov.b	5(r1),	&0x0092	;
+    c67c:	92 00 
+    c67e:	19 3f       	jmp	$-460    	;abs 0xc4b2
+
+0000c680 <.L152>:
+                else if (i == 0x01) data = GPIO1_PORT;
+    c680:	d1 42 92 00 	mov.b	&0x0092,5(r1)	;0x0092
+    c684:	05 00 
+    c686:	48 3f       	jmp	$-366    	;abs 0xc518
+
+0000c688 <.L41>:
+        if(*str > 0x39) r |= (*str - 0x07) & 0x0f; else r |= (*str & 0x0f);
+    c688:	7d f0 0f 00 	and.b	#15,	r13	;#0x000f
+
+0000c68c <.Loc.326.1>:
+    c68c:	4c dd       	bis.b	r13,	r12	;
+    c68e:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c692 <.LVL109>:
+    c692:	9c 3e       	jmp	$-710    	;abs 0xc3cc
+
+0000c694 <.L56>:
+    c694:	7d f0 0f 00 	and.b	#15,	r13	;#0x000f
+
+0000c698 <.Loc.326.1>:
+    c698:	4c dd       	bis.b	r13,	r12	;
+    c69a:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c69e <.LVL111>:
+    c69e:	de 3e       	jmp	$-578    	;abs 0xc45c
+
+0000c6a0 <.L59>:
+    c6a0:	7d f0 0f 00 	and.b	#15,	r13	;#0x000f
+
+0000c6a4 <.Loc.326.1>:
+    c6a4:	4c dd       	bis.b	r13,	r12	;
+    c6a6:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c6aa <.LVL113>:
+    c6aa:	fa 3e       	jmp	$-522    	;abs 0xc4a0
+
+0000c6ac <.L67>:
+    c6ac:	7d f0 0f 00 	and.b	#15,	r13	;#0x000f
+
+0000c6b0 <.Loc.326.1>:
+    c6b0:	4c dd       	bis.b	r13,	r12	;
+    c6b2:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c6b6 <.LVL115>:
+    c6b6:	81 3f       	jmp	$-252    	;abs 0xc5ba
+
+0000c6b8 <.L70>:
+    c6b8:	7d f0 0f 00 	and.b	#15,	r13	;#0x000f
+
+0000c6bc <.Loc.326.1>:
+    c6bc:	4c dd       	bis.b	r13,	r12	;
+    c6be:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c6c2 <.LVL117>:
+    c6c2:	9d 3f       	jmp	$-196    	;abs 0xc5fe
+
+0000c6c4 <.L82>:
+    c6c4:	7d f0 0f 00 	and.b	#15,	r13	;#0x000f
+
+0000c6c8 <.Loc.326.1>:
+    c6c8:	4c dd       	bis.b	r13,	r12	;
+    c6ca:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c6ce <.LVL119>:
+    c6ce:	0b 3e       	jmp	$-1000   	;abs 0xc2e6
+
+0000c6d0 <.L76>:
+    c6d0:	7d f0 0f 00 	and.b	#15,	r13	;#0x000f
+
+0000c6d4 <.Loc.326.1>:
+    c6d4:	4c dd       	bis.b	r13,	r12	;
+    c6d6:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c6da <.LVL121>:
+    c6da:	30 40 5a c2 	br	#0xc25a		;
+
+0000c6de <.L79>:
+    c6de:	7d f0 0f 00 	and.b	#15,	r13	;#0x000f
+
+0000c6e2 <.Loc.326.1>:
+    c6e2:	4c dd       	bis.b	r13,	r12	;
+    c6e4:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c6e8 <L0^A>:
+    c6e8:	30 40 a2 c2 	br	#0xc2a2		;
+
+0000c6ec <uartInitialize>:
+//      None
+//=================================== https://ss1.xrea.com/tmct.s1009.xrea.com/
+void uartInitialize()
+{
+
+    UART_CNTRL = CNTRL_RXCLEAR; // TXRUN = 0, RXCLEAR = 1
+    c6ec:	7c 40 a0 00 	mov.b	#160,	r12	;#0x00a0
+    c6f0:	fc 42 00 00 	mov.b	#8,	0(r12)	;r2 As==11
+
+0000c6f4 <.Loc.77.1>:
+    //UART_PRERH = 0x0a;          // 25MHz / 9600bps = 0x0a2c
+    //UART_PRERL = 0x2c;
+    //UART_PRERH = 0x00;          // 25MHz / 115200bps = 0x00d9
+    //UART_PRERL = 0xd9;
+    UART_PRERH = 0x02;          // 25MHz / 38400bps = 0x028b
+    c6f4:	e2 43 a2 00 	mov.b	#2,	&0x00a2	;r3 As==10
+
+0000c6f8 <.Loc.78.1>:
+    UART_PRERL = 0x8b;
+    c6f8:	f2 40 8b ff 	mov.b	#-117,	&0x00a3	;#0xff8b
+    c6fc:	a3 00 
+
+0000c6fe <.Loc.79.1>:
+    UART_CNTRL = CNTRL_RXRUN;   // TXRUN = 0, RXCLEAR = 0
+    c6fe:	cc 43 00 00 	mov.b	#0,	0(r12)	;r3 As==00
+
+0000c702 <.Loc.81.1>:
+
+}
+    c702:	30 41       	ret			
+
+0000c704 <uartClearReceive>:
+//      None
+//=================================== https://ss1.xrea.com/tmct.s1009.xrea.com/
+void uartClearReceive()
+{
+
+    UART_CNTRL |= CNTRL_RXCLEAR;
+    c704:	7c 40 a0 00 	mov.b	#160,	r12	;#0x00a0
+    c708:	fc d2 00 00 	bis.b	#8,	0(r12)	;r2 As==11
+
+0000c70c <.Loc.96.1>:
+    UART_CNTRL &= CNTRL_RXCLEAR_MASK;
+    c70c:	fc c2 00 00 	bic.b	#8,	0(r12)	;r2 As==11
+
+0000c710 <.Loc.98.1>:
+
+}
+    c710:	30 41       	ret			
+
+0000c712 <uartGetReceiveChar>:
+//          However, the following values indicate reception errors:
+//              0xfe ... Data was received but the stop bit data is abnormal.
+//              0xff ... No data in receive buffer (data not received)
+//=================================== https://ss1.xrea.com/tmct.s1009.xrea.com/
+unsigned char uartGetReceiveChar()
+{
+    c712:	21 83       	decd	r1		;
+
+0000c714 <.LCFI0>:
+
+    volatile unsigned char returnValue;
+
+    if ((UART_CNTRL & CNTRL_RXDONE) == CNTRL_RXDONE)
+    c714:	d2 b3 a0 00 	bit.b	#1,	&0x00a0	;r3 As==01
+    c718:	0e 24       	jz	$+30     	;abs 0xc736
+
+0000c71a <.Loc.120.1>:
+    {
+        if ((UART_CNTRL & CNTRL_RXERR) == CNTRL_RXERR)
+    c71a:	e2 b3 a0 00 	bit.b	#2,	&0x00a0	;r3 As==10
+    c71e:	11 24       	jz	$+36     	;abs 0xc742
+
+0000c720 <.Loc.122.1>:
+        {
+            returnValue = 0xfe;
+    c720:	f1 40 fe ff 	mov.b	#-2,	1(r1)	;#0xfffe
+    c724:	01 00 
+
+0000c726 <.Loc.123.1>:
+            UART_CNTRL |= CNTRL_RXCLEAR;
+    c726:	f2 d2 a0 00 	bis.b	#8,	&0x00a0	;r2 As==11
+
+0000c72a <.Loc.124.1>:
+            UART_CNTRL &= CNTRL_RXCLEAR_MASK;
+    c72a:	f2 c2 a0 00 	bic.b	#8,	&0x00a0	;r2 As==11
+
+0000c72e <.Loc.138.1>:
+        returnValue = 0xff;
+    }
+
+    return returnValue;
+
+}
+    c72e:	5c 41 01 00 	mov.b	1(r1),	r12	;
+    c732:	21 53       	incd	r1		;
+
+0000c734 <.LCFI1>:
+    c734:	30 41       	ret			
+
+0000c736 <.L5>:
+        returnValue = 0xff;
+    c736:	f1 43 01 00 	mov.b	#-1,	1(r1)	;r3 As==11
+
+0000c73a <.Loc.138.1>:
+}
+    c73a:	5c 41 01 00 	mov.b	1(r1),	r12	;
+    c73e:	21 53       	incd	r1		;
+
+0000c740 <.LCFI3>:
+    c740:	30 41       	ret			
+
+0000c742 <.L6>:
+            returnValue = UART_RXDATA;
+    c742:	d1 42 a4 00 	mov.b	&0x00a4,1(r1)	;0x00a4
+    c746:	01 00 
+
+0000c748 <.Loc.129.1>:
+            UART_CNTRL |= CNTRL_RXCLEAR;
+    c748:	f2 d2 a0 00 	bis.b	#8,	&0x00a0	;r2 As==11
+
+0000c74c <.Loc.130.1>:
+            UART_CNTRL &= CNTRL_RXCLEAR_MASK;
+    c74c:	f2 c2 a0 00 	bic.b	#8,	&0x00a0	;r2 As==11
+
+0000c750 <.Loc.138.1>:
+}
+    c750:	5c 41 01 00 	mov.b	1(r1),	r12	;
+    c754:	21 53       	incd	r1		;
+
+0000c756 <.LCFI5>:
+    c756:	30 41       	ret			
+
+0000c758 <uartSendChar>:
+//          Data to be sent
+//  Return:
+//      None
+//=================================== https://ss1.xrea.com/tmct.s1009.xrea.com/
+void uartSendChar(unsigned char data)
+{
+    c758:	21 83       	decd	r1		;
+
+0000c75a <.LCFI6>:
+
+    volatile unsigned char work;
+
+    work = UART_CNTRL & CNTRL_TXRUN_MASK;
+    c75a:	5d 42 a0 00 	mov.b	&0x00a0,r13	;0x00a0
+    c75e:	7d f0 7f 00 	and.b	#127,	r13	;#0x007f
+    c762:	c1 4d 01 00 	mov.b	r13,	1(r1)	;
+
+0000c766 <.Loc.158.1>:
+    UART_CNTRL = work;  // Tx Stop
+    c766:	d2 41 01 00 	mov.b	1(r1),	&0x00a0	;
+    c76a:	a0 00 
+
+0000c76c <.Loc.159.1>:
+    UART_TXDATA = data;
+    c76c:	c2 4c a5 00 	mov.b	r12,	&0x00a5	;
+
+0000c770 <.Loc.160.1>:
+    UART_CNTRL = work | CNTRL_TXRUN;    // Tx Run
+    c770:	5c 41 01 00 	mov.b	1(r1),	r12	;
+
+0000c774 <.LVL1>:
+    c774:	7c d0 80 ff 	bis.b	#-128,	r12	;#0xff80
+    c778:	c2 4c a0 00 	mov.b	r12,	&0x00a0	;
+
+0000c77c <.LVL2>:
+    UART_CNTRL = work | CNTRL_TXRUN;    // One wait cycle required
+    c77c:	5d 41 01 00 	mov.b	1(r1),	r13	;
+    c780:	7d d0 80 ff 	bis.b	#-128,	r13	;#0xff80
+    c784:	c2 4d a0 00 	mov.b	r13,	&0x00a0	;
+
+0000c788 <.L9>:
+    while ((UART_CNTRL & CNTRL_TXDONE) != CNTRL_TXDONE);
+    c788:	f2 b0 10 00 	bit.b	#16,	&0x00a0	;#0x0010
+    c78c:	a0 00 
+    c78e:	fc 27       	jz	$-6      	;abs 0xc788
+
+0000c790 <.Loc.164.1>:
+
+}
+    c790:	21 53       	incd	r1		;
+
+0000c792 <.LCFI7>:
+    c792:	30 41       	ret			
+
+0000c794 <binaryToAscii>:
+//      c : Value to convert
+//  Return:
+//      unsigned char : ASCII character code
+//=================================== https://ss1.xrea.com/tmct.s1009.xrea.com/
+unsigned char binaryToAscii(unsigned char c)
+{
+    c794:	4d 4c       	mov.b	r12,	r13	;
+
+0000c796 <.Loc.178.1>:
+
+    if (c <= 9) c = c + '0';
+    c796:	7e 40 09 00 	mov.b	#9,	r14	;
+    c79a:	4e 9c       	cmp.b	r12,	r14	;
+    c79c:	06 28       	jnc	$+14     	;abs 0xc7aa
+
+0000c79e <.Loc.178.1>:
+    c79e:	7d 50 30 00 	add.b	#48,	r13	;#0x0030
+    c7a2:	3d f0 ff 00 	and	#255,	r13	;#0x00ff
+
+0000c7a6 <.L14>:
+    if ((0xa <= c)&&(c <= 0xf)) c = (c + 'a' - 0xa);
+    return c;
+
+}
+    c7a6:	4c 4d       	mov.b	r13,	r12	;
+    c7a8:	30 41       	ret			
+
+0000c7aa <.L13>:
+    if ((0xa <= c)&&(c <= 0xf)) c = (c + 'a' - 0xa);
+    c7aa:	4c 4d       	mov.b	r13,	r12	;
+    c7ac:	7c 50 f6 ff 	add.b	#-10,	r12	;#0xfff6
+
+0000c7b0 <.Loc.179.1>:
+    c7b0:	7e 40 05 00 	mov.b	#5,	r14	;
+    c7b4:	4e 9c       	cmp.b	r12,	r14	;
+    c7b6:	f7 2b       	jnc	$-16     	;abs 0xc7a6
+
+0000c7b8 <.Loc.179.1>:
+    c7b8:	7d 50 57 00 	add.b	#87,	r13	;#0x0057
+
+0000c7bc <.LVL6>:
+    c7bc:	3d f0 ff 00 	and	#255,	r13	;#0x00ff
+
+0000c7c0 <.LVL7>:
+}
+    c7c0:	4c 4d       	mov.b	r13,	r12	;
+    c7c2:	30 41       	ret			
+
+0000c7c4 <uartSendAsciiValue>:
+//      val : Value to send
+//  Return:
+//      None
+//=================================== https://ss1.xrea.com/tmct.s1009.xrea.com/
+void uartSendAsciiValue(unsigned char cc, unsigned short val)
+{
+    c7c4:	21 82       	sub	#4,	r1	;r2 As==10
+
+0000c7c6 <.LCFI8>:
+    unsigned char c;
+    if( cc == 4 )
+    c7c6:	6c 92       	cmp.b	#4,	r12	;r2 As==10
+    c7c8:	04 24       	jz	$+10     	;abs 0xc7d2
+
+0000c7ca <.Loc.209.1>:
+        
+        c = (unsigned char)(0xf & (val >> 8  ));
+        uartSendChar( binaryToAscii(c) );
+    }
+    
+    if( cc == 4 || cc == 2 )
+    c7ca:	6c 93       	cmp.b	#2,	r12	;r3 As==10
+    c7cc:	72 24       	jz	$+230    	;abs 0xc8b2
+
+0000c7ce <.Loc.217.1>:
+        uartSendChar( binaryToAscii(c) );
+        
+        c = (unsigned char)(0xf & val );
+        uartSendChar( binaryToAscii(c) );
+    }
+    c7ce:	21 52       	add	#4,	r1	;r2 As==10
+
+0000c7d0 <.LCFI9>:
+    c7d0:	30 41       	ret			
+
+0000c7d2 <.L42>:
+        c = (unsigned char)(0xf & (val >> 12 ));
+    c7d2:	0e 4d       	mov	r13,	r14	;
+    c7d4:	12 c3       	clrc			
+    c7d6:	0e 10       	rrc	r14		;
+    c7d8:	12 c3       	clrc			
+    c7da:	0e 10       	rrc	r14		;
+    c7dc:	12 c3       	clrc			
+    c7de:	0e 10       	rrc	r14		;
+    c7e0:	12 c3       	clrc			
+    c7e2:	0e 10       	rrc	r14		;
+    c7e4:	12 c3       	clrc			
+    c7e6:	0e 10       	rrc	r14		;
+    c7e8:	12 c3       	clrc			
+    c7ea:	0e 10       	rrc	r14		;
+    c7ec:	12 c3       	clrc			
+    c7ee:	0e 10       	rrc	r14		;
+    c7f0:	12 c3       	clrc			
+    c7f2:	0e 10       	rrc	r14		;
+    c7f4:	12 c3       	clrc			
+    c7f6:	0e 10       	rrc	r14		;
+    c7f8:	12 c3       	clrc			
+    c7fa:	0e 10       	rrc	r14		;
+    c7fc:	12 c3       	clrc			
+    c7fe:	0e 10       	rrc	r14		;
+    c800:	12 c3       	clrc			
+    c802:	0e 10       	rrc	r14		;
+
+0000c804 <.Loc.202.1>:
+    c804:	4c 4e       	mov.b	r14,	r12	;
+
+0000c806 <.LBB18>:
+    if (c <= 9) c = c + '0';
+    c806:	7f 40 09 00 	mov.b	#9,	r15	;
+    c80a:	0f 9e       	cmp	r14,	r15	;
+    c80c:	b1 2c       	jc	$+356    	;abs 0xc970
+
+0000c80e <.Loc.179.1>:
+    if ((0xa <= c)&&(c <= 0xf)) c = (c + 'a' - 0xa);
+    c80e:	7c 50 57 00 	add.b	#87,	r12	;#0x0057
+    c812:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c816 <.L18>:
+    work = UART_CNTRL & CNTRL_TXRUN_MASK;
+    c816:	5e 42 a0 00 	mov.b	&0x00a0,r14	;0x00a0
+
+0000c81a <.LVL11>:
+    c81a:	7e f0 7f 00 	and.b	#127,	r14	;#0x007f
+    c81e:	c1 4e 01 00 	mov.b	r14,	1(r1)	;
+
+0000c822 <.Loc.158.1>:
+    UART_CNTRL = work;  // Tx Stop
+    c822:	d2 41 01 00 	mov.b	1(r1),	&0x00a0	;
+    c826:	a0 00 
+
+0000c828 <.Loc.159.1>:
+    UART_TXDATA = data;
+    c828:	c2 4c a5 00 	mov.b	r12,	&0x00a5	;
+
+0000c82c <.Loc.160.1>:
+    UART_CNTRL = work | CNTRL_TXRUN;    // Tx Run
+    c82c:	5f 41 01 00 	mov.b	1(r1),	r15	;
+    c830:	7f d0 80 ff 	bis.b	#-128,	r15	;#0xff80
+    c834:	c2 4f a0 00 	mov.b	r15,	&0x00a0	;
+
+0000c838 <.Loc.161.1>:
+    UART_CNTRL = work | CNTRL_TXRUN;    // One wait cycle required
+    c838:	5c 41 01 00 	mov.b	1(r1),	r12	;
+
+0000c83c <.LVL12>:
+    c83c:	7c d0 80 ff 	bis.b	#-128,	r12	;#0xff80
+    c840:	c2 4c a0 00 	mov.b	r12,	&0x00a0	;
+
+0000c844 <.L19>:
+    while ((UART_CNTRL & CNTRL_TXDONE) != CNTRL_TXDONE);
+    c844:	f2 b0 10 00 	bit.b	#16,	&0x00a0	;#0x0010
+    c848:	a0 00 
+    c84a:	fc 27       	jz	$-6      	;abs 0xc844
+
+0000c84c <.LBE21>:
+        c = (unsigned char)(0xf & (val >> 8  ));
+    c84c:	0c 4d       	mov	r13,	r12	;
+    c84e:	12 c3       	clrc			
+    c850:	0c 10       	rrc	r12		;
+    c852:	12 c3       	clrc			
+    c854:	0c 10       	rrc	r12		;
+    c856:	12 c3       	clrc			
+    c858:	0c 10       	rrc	r12		;
+    c85a:	12 c3       	clrc			
+    c85c:	0c 10       	rrc	r12		;
+    c85e:	12 c3       	clrc			
+    c860:	0c 10       	rrc	r12		;
+    c862:	12 c3       	clrc			
+    c864:	0c 10       	rrc	r12		;
+    c866:	12 c3       	clrc			
+    c868:	0c 10       	rrc	r12		;
+    c86a:	12 c3       	clrc			
+    c86c:	0c 10       	rrc	r12		;
+
+0000c86e <.Loc.205.1>:
+    c86e:	7c f0 0f 00 	and.b	#15,	r12	;#0x000f
+
+0000c872 <.LBB23>:
+    if (c <= 9) c = c + '0';
+    c872:	7e 40 09 00 	mov.b	#9,	r14	;
+    c876:	4e 9c       	cmp.b	r12,	r14	;
+    c878:	7e 28       	jnc	$+254    	;abs 0xc976
+
+0000c87a <.Loc.178.1>:
+    c87a:	7c 50 30 00 	add.b	#48,	r12	;#0x0030
+
+0000c87e <.LVL14>:
+    c87e:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c882 <.L21>:
+    work = UART_CNTRL & CNTRL_TXRUN_MASK;
+    c882:	5f 42 a0 00 	mov.b	&0x00a0,r15	;0x00a0
+    c886:	7f f0 7f 00 	and.b	#127,	r15	;#0x007f
+    c88a:	c1 4f 00 00 	mov.b	r15,	0(r1)	;
+
+0000c88e <.Loc.158.1>:
+    UART_CNTRL = work;  // Tx Stop
+    c88e:	e2 41 a0 00 	mov.b	@r1,	&0x00a0	;
+
+0000c892 <.Loc.159.1>:
+    UART_TXDATA = data;
+    c892:	c2 4c a5 00 	mov.b	r12,	&0x00a5	;
+
+0000c896 <.Loc.160.1>:
+    UART_CNTRL = work | CNTRL_TXRUN;    // Tx Run
+    c896:	6c 41       	mov.b	@r1,	r12	;
+
+0000c898 <.LVL16>:
+    c898:	7c d0 80 ff 	bis.b	#-128,	r12	;#0xff80
+    c89c:	c2 4c a0 00 	mov.b	r12,	&0x00a0	;
+
+0000c8a0 <.Loc.161.1>:
+    UART_CNTRL = work | CNTRL_TXRUN;    // One wait cycle required
+    c8a0:	6e 41       	mov.b	@r1,	r14	;
+    c8a2:	7e d0 80 ff 	bis.b	#-128,	r14	;#0xff80
+    c8a6:	c2 4e a0 00 	mov.b	r14,	&0x00a0	;
+
+0000c8aa <.L22>:
+    while ((UART_CNTRL & CNTRL_TXDONE) != CNTRL_TXDONE);
+    c8aa:	f2 b0 10 00 	bit.b	#16,	&0x00a0	;#0x0010
+    c8ae:	a0 00 
+    c8b0:	fc 27       	jz	$-6      	;abs 0xc8aa
+
+0000c8b2 <.L29>:
+        c = (unsigned char)(0xf & (val >> 4  ));
+    c8b2:	0c 4d       	mov	r13,	r12	;
+    c8b4:	12 c3       	clrc			
+    c8b6:	0c 10       	rrc	r12		;
+    c8b8:	12 c3       	clrc			
+    c8ba:	0c 10       	rrc	r12		;
+    c8bc:	12 c3       	clrc			
+    c8be:	0c 10       	rrc	r12		;
+    c8c0:	12 c3       	clrc			
+    c8c2:	0c 10       	rrc	r12		;
+
+0000c8c4 <.Loc.211.1>:
+    c8c4:	7c f0 0f 00 	and.b	#15,	r12	;#0x000f
+
+0000c8c8 <.LBB28>:
+    if (c <= 9) c = c + '0';
+    c8c8:	7f 40 09 00 	mov.b	#9,	r15	;
+    c8cc:	4f 9c       	cmp.b	r12,	r15	;
+    c8ce:	46 2c       	jc	$+142    	;abs 0xc95c
+
+0000c8d0 <.Loc.179.1>:
+    if ((0xa <= c)&&(c <= 0xf)) c = (c + 'a' - 0xa);
+    c8d0:	7c 50 57 00 	add.b	#87,	r12	;#0x0057
+
+0000c8d4 <.LVL19>:
+    c8d4:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c8d8 <.L24>:
+    work = UART_CNTRL & CNTRL_TXRUN_MASK;
+    c8d8:	5e 42 a0 00 	mov.b	&0x00a0,r14	;0x00a0
+    c8dc:	7e f0 7f 00 	and.b	#127,	r14	;#0x007f
+    c8e0:	c1 4e 03 00 	mov.b	r14,	3(r1)	;
+
+0000c8e4 <.Loc.158.1>:
+    UART_CNTRL = work;  // Tx Stop
+    c8e4:	d2 41 03 00 	mov.b	3(r1),	&0x00a0	;
+    c8e8:	a0 00 
+
+0000c8ea <.Loc.159.1>:
+    UART_TXDATA = data;
+    c8ea:	c2 4c a5 00 	mov.b	r12,	&0x00a5	;
+
+0000c8ee <.Loc.160.1>:
+    UART_CNTRL = work | CNTRL_TXRUN;    // Tx Run
+    c8ee:	5f 41 03 00 	mov.b	3(r1),	r15	;
+    c8f2:	7f d0 80 ff 	bis.b	#-128,	r15	;#0xff80
+    c8f6:	c2 4f a0 00 	mov.b	r15,	&0x00a0	;
+
+0000c8fa <.Loc.161.1>:
+    UART_CNTRL = work | CNTRL_TXRUN;    // One wait cycle required
+    c8fa:	5c 41 03 00 	mov.b	3(r1),	r12	;
+
+0000c8fe <.LVL21>:
+    c8fe:	7c d0 80 ff 	bis.b	#-128,	r12	;#0xff80
+    c902:	c2 4c a0 00 	mov.b	r12,	&0x00a0	;
+
+0000c906 <.L25>:
+    while ((UART_CNTRL & CNTRL_TXDONE) != CNTRL_TXDONE);
+    c906:	f2 b0 10 00 	bit.b	#16,	&0x00a0	;#0x0010
+    c90a:	a0 00 
+    c90c:	fc 27       	jz	$-6      	;abs 0xc906
+
+0000c90e <.LBE31>:
+        c = (unsigned char)(0xf & val );
+    c90e:	7d f0 0f 00 	and.b	#15,	r13	;#0x000f
+
+0000c912 <.LBB33>:
+    if (c <= 9) c = c + '0';
+    c912:	7e 40 09 00 	mov.b	#9,	r14	;
+    c916:	4e 9d       	cmp.b	r13,	r14	;
+    c918:	26 28       	jnc	$+78     	;abs 0xc966
+
+0000c91a <.Loc.178.1>:
+    c91a:	7d 50 30 00 	add.b	#48,	r13	;#0x0030
+
+0000c91e <.LVL23>:
+    c91e:	3d f0 ff 00 	and	#255,	r13	;#0x00ff
+
+0000c922 <.L27>:
+    work = UART_CNTRL & CNTRL_TXRUN_MASK;
+    c922:	5f 42 a0 00 	mov.b	&0x00a0,r15	;0x00a0
+    c926:	7f f0 7f 00 	and.b	#127,	r15	;#0x007f
+    c92a:	c1 4f 02 00 	mov.b	r15,	2(r1)	;
+
+0000c92e <.Loc.158.1>:
+    UART_CNTRL = work;  // Tx Stop
+    c92e:	d2 41 02 00 	mov.b	2(r1),	&0x00a0	;
+    c932:	a0 00 
+
+0000c934 <.Loc.159.1>:
+    UART_TXDATA = data;
+    c934:	c2 4d a5 00 	mov.b	r13,	&0x00a5	;
+
+0000c938 <.Loc.160.1>:
+    UART_CNTRL = work | CNTRL_TXRUN;    // Tx Run
+    c938:	5c 41 02 00 	mov.b	2(r1),	r12	;
+    c93c:	7c d0 80 ff 	bis.b	#-128,	r12	;#0xff80
+    c940:	c2 4c a0 00 	mov.b	r12,	&0x00a0	;
+
+0000c944 <.Loc.161.1>:
+    UART_CNTRL = work | CNTRL_TXRUN;    // One wait cycle required
+    c944:	5e 41 02 00 	mov.b	2(r1),	r14	;
+    c948:	7e d0 80 ff 	bis.b	#-128,	r14	;#0xff80
+    c94c:	c2 4e a0 00 	mov.b	r14,	&0x00a0	;
+
+0000c950 <.L28>:
+    while ((UART_CNTRL & CNTRL_TXDONE) != CNTRL_TXDONE);
+    c950:	f2 b0 10 00 	bit.b	#16,	&0x00a0	;#0x0010
+    c954:	a0 00 
+    c956:	fc 27       	jz	$-6      	;abs 0xc950
+
+0000c958 <.LBE36>:
+    c958:	21 52       	add	#4,	r1	;r2 As==10
+
+0000c95a <.LCFI11>:
+    c95a:	30 41       	ret			
+
+0000c95c <.L44>:
+    if (c <= 9) c = c + '0';
+    c95c:	7c 50 30 00 	add.b	#48,	r12	;#0x0030
+
+0000c960 <.LVL26>:
+    c960:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c964 <.LVL27>:
+    if ((0xa <= c)&&(c <= 0xf)) c = (c + 'a' - 0xa);
+    c964:	b9 3f       	jmp	$-140    	;abs 0xc8d8
+
+0000c966 <.L26>:
+    c966:	7d 50 57 00 	add.b	#87,	r13	;#0x0057
+
+0000c96a <.LVL29>:
+    c96a:	3d f0 ff 00 	and	#255,	r13	;#0x00ff
+
+0000c96e <.LVL30>:
+    c96e:	d9 3f       	jmp	$-76     	;abs 0xc922
+
+0000c970 <.L43>:
+    if (c <= 9) c = c + '0';
+    c970:	3c 50 30 00 	add	#48,	r12	;#0x0030
+
+0000c974 <.LVL32>:
+    if ((0xa <= c)&&(c <= 0xf)) c = (c + 'a' - 0xa);
+    c974:	50 3f       	jmp	$-350    	;abs 0xc816
+
+0000c976 <.L20>:
+    c976:	7c 50 57 00 	add.b	#87,	r12	;#0x0057
+
+0000c97a <.LVL34>:
+    c97a:	3c f0 ff 00 	and	#255,	r12	;#0x00ff
+
+0000c97e <.LVL35>:
+    c97e:	81 3f       	jmp	$-252    	;abs 0xc882
+
+0000c980 <i2cInitialize>:
+//      None
+//=================================== https://ss1.xrea.com/tmct.s1009.xrea.com/
+void i2cInitialize()
+{
+
+    I2C_CTR = 0x00;     // I2C Core disable
+    c980:	7c 40 b2 00 	mov.b	#178,	r12	;#0x00b2
+    c984:	cc 43 00 00 	mov.b	#0,	0(r12)	;r3 As==00
+
+0000c988 <L0^A>:
+    I2C_PRERH = 0x00;   // SCL Frequency = 100KHz
+    c988:	c2 43 b1 00 	mov.b	#0,	&0x00b1	;r3 As==00
+
+0000c98c <.Loc.79.1>:
+    I2C_PRERL = 0x32;   //  -> 25MHz / (5 * 100KHz) = 0x0032
+    c98c:	f2 40 32 00 	mov.b	#50,	&0x00b0	;#0x0032
+    c990:	b0 00 
+
+0000c992 <.Loc.80.1>:
+    I2C_CTR = 0x80;     // I2C Core enable
+    c992:	fc 40 80 ff 	mov.b	#-128,	0(r12)	;#0xff80
+    c996:	00 00 
+
+0000c998 <.Loc.82.1>:
+
+}
+    c998:	30 41       	ret			
+
+0000c99a <i2cBeginTransmission>:
+//=================================== https://ss1.xrea.com/tmct.s1009.xrea.com/
+unsigned char i2cBeginTransmission(unsigned char slaveAddr)
+{
+
+    slaveAddr &= 0xfe;
+    I2C_TXD = slaveAddr;
+    c99a:	5c c3       	bic.b	#1,	r12	;r3 As==01
+
+0000c99c <.LVL2>:
+    c99c:	c2 4c b5 00 	mov.b	r12,	&0x00b5	;
+
+0000c9a0 <.Loc.110.1>:
+    I2C_CR = I2C_CR_STA | I2C_CR_WR;
+    c9a0:	f2 40 90 ff 	mov.b	#-112,	&0x00b6	;#0xff90
+    c9a4:	b6 00 
+
+0000c9a6 <.L4>:
+    while ((I2C_SR & I2C_SR_TIP) == I2C_SR_TIP);
+    c9a6:	e2 b3 b4 00 	bit.b	#2,	&0x00b4	;r3 As==10
+    c9aa:	fd 23       	jnz	$-4      	;abs 0xc9a6
+
+0000c9ac <.Loc.112.1>:
+    return I2C_SR;
+
+}
+    c9ac:	5c 42 b4 00 	mov.b	&0x00b4,r12	;0x00b4
+
+0000c9b0 <.LVL3>:
+    c9b0:	30 41       	ret			
+
+0000c9b2 <i2cWrite>:
+//      [0] I2C_SR_IF       ... Interrupt Flag
+//=================================== https://ss1.xrea.com/tmct.s1009.xrea.com/
+unsigned char i2cWrite(unsigned char data)
+{
+
+    I2C_TXD = data;
+    c9b2:	c2 4c b5 00 	mov.b	r12,	&0x00b5	;
+
+0000c9b6 <.Loc.136.1>:
+    I2C_CR = I2C_CR_WR;
+    c9b6:	f2 40 10 00 	mov.b	#16,	&0x00b6	;#0x0010
+    c9ba:	b6 00 
+
+0000c9bc <.L7>:
+    while ((I2C_SR & I2C_SR_TIP) == I2C_SR_TIP);
+    c9bc:	e2 b3 b4 00 	bit.b	#2,	&0x00b4	;r3 As==10
+    c9c0:	fd 23       	jnz	$-4      	;abs 0xc9bc
+
+0000c9c2 <.Loc.138.1>:
+    return I2C_SR;
+
+}
+    c9c2:	5c 42 b4 00 	mov.b	&0x00b4,r12	;0x00b4
+
+0000c9c6 <.LVL5>:
+    c9c6:	30 41       	ret			
+
+0000c9c8 <i2cEndTransmission>:
+//      [0] I2C_SR_IF       ... Interrupt Flag
+//=================================== https://ss1.xrea.com/tmct.s1009.xrea.com/
+void i2cEndTransmission()
+{
+
+    while ((I2C_SR & I2C_SR_BUSY) == I2C_SR_BUSY)
+    c9c8:	f2 b0 40 00 	bit.b	#64,	&0x00b4	;#0x0040
+    c9cc:	b4 00 
+    c9ce:	07 24       	jz	$+16     	;abs 0xc9de
+
+0000c9d0 <.L11>:
+    {
+        I2C_CR = I2C_CR_STO;
+    c9d0:	f2 40 40 00 	mov.b	#64,	&0x00b6	;#0x0040
+    c9d4:	b6 00 
+
+0000c9d6 <.Loc.161.1>:
+    while ((I2C_SR & I2C_SR_BUSY) == I2C_SR_BUSY)
+    c9d6:	f2 b0 40 00 	bit.b	#64,	&0x00b4	;#0x0040
+    c9da:	b4 00 
+    c9dc:	f9 23       	jnz	$-12     	;abs 0xc9d0
+
+0000c9de <.L9>:
+    }
+
+}
+    c9de:	30 41       	ret			
+
+0000c9e0 <i2cBeginRequest>:
+//=================================== https://ss1.xrea.com/tmct.s1009.xrea.com/
+unsigned char i2cBeginRequest(unsigned char slaveAddr)
+{
+
+    slaveAddr |= 0x01;
+    I2C_TXD = slaveAddr;
+    c9e0:	5c d3       	bis.b	#1,	r12	;r3 As==01
+
+0000c9e2 <.LVL8>:
+    c9e2:	c2 4c b5 00 	mov.b	r12,	&0x00b5	;
+
+0000c9e6 <.Loc.194.1>:
+    I2C_CR = I2C_CR_STA | I2C_CR_WR;
+    c9e6:	f2 40 90 ff 	mov.b	#-112,	&0x00b6	;#0xff90
+    c9ea:	b6 00 
+
+0000c9ec <.L17>:
+    while ((I2C_SR & I2C_SR_TIP) == I2C_SR_TIP);
+    c9ec:	e2 b3 b4 00 	bit.b	#2,	&0x00b4	;r3 As==10
+    c9f0:	fd 23       	jnz	$-4      	;abs 0xc9ec
+
+0000c9f2 <.Loc.196.1>:
+    return I2C_SR;
+
+}
+    c9f2:	5c 42 b4 00 	mov.b	&0x00b4,r12	;0x00b4
+
+0000c9f6 <.LVL9>:
+    c9f6:	30 41       	ret			
+
+0000c9f8 <i2cRead>:
+//      [0] I2C_SR_IF       ... Interrupt Flag
+//=================================== https://ss1.xrea.com/tmct.s1009.xrea.com/
+unsigned char i2cRead(unsigned char ack)
+{
+
+    if (ack != 0) I2C_CR = I2C_CR_RD | I2C_CR_ACK; else I2C_CR = I2C_CR_RD;
+    c9f8:	4c 93       	cmp.b	#0,	r12	;r3 As==00
+    c9fa:	09 24       	jz	$+20     	;abs 0xca0e
+
+0000c9fc <.Loc.223.1>:
+    c9fc:	f2 40 28 00 	mov.b	#40,	&0x00b6	;#0x0028
+    ca00:	b6 00 
+
+0000ca02 <.L22>:
+    while ((I2C_SR & I2C_SR_TIP) == I2C_SR_TIP);
+    ca02:	e2 b3 b4 00 	bit.b	#2,	&0x00b4	;r3 As==10
+    ca06:	fd 23       	jnz	$-4      	;abs 0xca02
+
+0000ca08 <.Loc.225.1>:
+    return I2C_RXD;
+
+}
+    ca08:	5c 42 b3 00 	mov.b	&0x00b3,r12	;0x00b3
+
+0000ca0c <.LVL11>:
+    ca0c:	30 41       	ret			
+
+0000ca0e <.L20>:
+    if (ack != 0) I2C_CR = I2C_CR_RD | I2C_CR_ACK; else I2C_CR = I2C_CR_RD;
+    ca0e:	f2 40 20 00 	mov.b	#32,	&0x00b6	;#0x0020
+    ca12:	b6 00 
+    ca14:	f6 3f       	jmp	$-18     	;abs 0xca02
+
+0000ca16 <INT_NMI>:
+//  As a sample of interrupt processing, the output port state is changed when 
+//  an interrupt is received.
+//  The output port is set to 0x55 for IRQ0 and 0xaa for IRQ1.
+#define GPIO1_PORT  (*(volatile unsigned char *)  0x0092)
+
+wakeup interrupt (NMI_VECTOR) INT_NMI(void){ }
+    ca16:	
+0000ca18 <L0^A>:
+    ca18:	f0 00       	suba	r0,	r0	;
+    ca1a:	00 00       	beq			
+    ca1c:	00 13       	reti			
+
+0000ca1e <INT_User_13>:
+
+wakeup interrupt (USER_13_VECTOR) INT_User_13(void){ }
+    ca1e:	b1 c0 f0 00 	bic	#240,	0(r1)	;#0x00f0
+    ca22:	00 00 
+    ca24:	00 13       	reti			
+
+0000ca26 <INT_User_12>:
+
+wakeup interrupt (USER_12_VECTOR) INT_User_12(void){ }
+    ca26:	b1 c0 f0 00 	bic	#240,	0(r1)	;#0x00f0
+    ca2a:	00 00 
+    ca2c:	00 13       	reti			
+
+0000ca2e <INT_User_11>:
+
+wakeup interrupt (USER_11_VECTOR) INT_User_11(void){ }
+    ca2e:	b1 c0 f0 00 	bic	#240,	0(r1)	;#0x00f0
+    ca32:	00 00 
+    ca34:	00 13       	reti			
+
+0000ca36 <INT_Watchdog>:
+
+wakeup interrupt (WDT_VECTOR) INT_Watchdog(void){ }
+    ca36:	b1 c0 f0 00 	bic	#240,	0(r1)	;#0x00f0
+    ca3a:	00 00 
+    ca3c:	00 13       	reti			
+
+0000ca3e <INT_User_09>:
+
+wakeup interrupt (USER_09_VECTOR) INT_User_09(void){ }
+    ca3e:	b1 c0 f0 00 	bic	#240,	0(r1)	;#0x00f0
+    ca42:	00 00 
+    ca44:	00 13       	reti			
+
+0000ca46 <INT_User_08>:
+
+wakeup interrupt (USER_08_VECTOR) INT_User_08(void){ }
+    ca46:	b1 c0 f0 00 	bic	#240,	0(r1)	;#0x00f0
+    ca4a:	00 00 
+    ca4c:	00 13       	reti			
+
+0000ca4e <INT_User_07>:
+
+wakeup interrupt (USER_07_VECTOR) INT_User_07(void){ }
+    ca4e:	b1 c0 f0 00 	bic	#240,	0(r1)	;#0x00f0
+    ca52:	00 00 
+    ca54:	00 13       	reti			
+
+0000ca56 <INT_User_06>:
+
+wakeup interrupt (USER_06_VECTOR) INT_User_06(void){ }
+    ca56:	b1 c0 f0 00 	bic	#240,	0(r1)	;#0x00f0
+    ca5a:	00 00 
+    ca5c:	00 13       	reti			
+
+0000ca5e <INT_User_05>:
+
+wakeup interrupt (USER_05_VECTOR) INT_User_05(void){ }
+    ca5e:	b1 c0 f0 00 	bic	#240,	0(r1)	;#0x00f0
+    ca62:	00 00 
+    ca64:	00 13       	reti			
+
+0000ca66 <INT_User_04>:
+
+wakeup interrupt (USER_04_VECTOR) INT_User_04(void){ }
+    ca66:	b1 c0 f0 00 	bic	#240,	0(r1)	;#0x00f0
+    ca6a:	00 00 
+    ca6c:	00 13       	reti			
+
+0000ca6e <INT_User_03>:
+
+wakeup interrupt (USER_03_VECTOR) INT_User_03(void){ }
+    ca6e:	b1 c0 f0 00 	bic	#240,	0(r1)	;#0x00f0
+    ca72:	00 00 
+    ca74:	00 13       	reti			
+
+0000ca76 <INT_User_02>:
+
+wakeup interrupt (USER_02_VECTOR) INT_User_02(void){ }
+    ca76:	b1 c0 f0 00 	bic	#240,	0(r1)	;#0x00f0
+    ca7a:	00 00 
+    ca7c:	00 13       	reti			
+
+0000ca7e <INT_User_01>:
+
+wakeup interrupt (USER_01_VECTOR) INT_User_01(void){ GPIO1_PORT = 0xaa; }
+    ca7e:	f2 40 aa ff 	mov.b	#-86,	&0x0092	;#0xffaa
+    ca82:	92 00 
+
+0000ca84 <.Loc.68.1>:
+    ca84:	b1 c0 f0 00 	bic	#240,	0(r1)	;#0x00f0
+    ca88:	00 00 
+    ca8a:	00 13       	reti			
+
+0000ca8c <INT_User_00>:
+
+wakeup interrupt (USER_00_VECTOR) INT_User_00(void){ GPIO1_PORT = 0x55; }
+    ca8c:	f2 40 55 00 	mov.b	#85,	&0x0092	;#0x0055
+    ca90:	92 00 
+
+0000ca92 <.Loc.70.1>:
+    ca92:	b1 c0 f0 00 	bic	#240,	0(r1)	;#0x00f0
+    ca96:	00 00 
+    ca98:	00 13       	reti			

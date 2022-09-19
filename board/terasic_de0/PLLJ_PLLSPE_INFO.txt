@@ -1,0 +1,5 @@
+PLL_Name	media_pll:m_mediapll0|altpll:altpll_component|media_pll_altpll:auto_generated|pll1
+PLLJITTER	30
+PLLSPEmax	84
+PLLSPEmin	-53
+
